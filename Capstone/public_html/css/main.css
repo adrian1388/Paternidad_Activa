@@ -3,7 +3,22 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+.container-fluid {
+    position: relative;
+    overflow: hidden;
+}
+#memo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    background-repeat: repeat-y;
+}
+body{
+    padding-top: 0;
+}
 .chat
 {
     list-style: none;
@@ -68,6 +83,12 @@
 
 
 .micolumna{
-    
+
     color:rgb(255,50,50);
+}
+
+
+.micolumnainside{
+
+    color:rgb(50,50,100);
 }

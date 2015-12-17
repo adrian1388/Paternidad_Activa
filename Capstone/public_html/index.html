@@ -12,12 +12,6 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
@@ -27,10 +21,11 @@
         
     </head>
     <body>
+        
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -51,38 +46,48 @@
             <button type="submit" class="btn btn-success">Sign in</button>
           </form>
         </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+     <!-- </div>
+    </nav>-->
+     <img id="memo" src='img/memo.jpg'>
 
     <div class="container-fluid">
+        
       <!-- Example row of columns -->
       <div class="row">
+          
         <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
-            
+            <div class="panel panel-primary">
+                <div class="panel-heading" id="accordion">
+                    
           <h2>Adivinar Palabras:</h2>
+                </div>
+            </div>
           <img src="img/tungurahua.jpg" alt="imagen-nivel1" class="img-thumbnail" >
-          <hr/>
-          			<form role="form">
-				<div class="form-group">
-					 
-					<label for="exampleInputEmail1">
-						Ingresar palabra
-					</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ingresar palabra"/>
-				</div>
-				
-				
-				<button type="submit" class="btn-group btn-warning btn-block">
-					<span class="glyphicon glyphicon-ok-circle"></span> OK 
-				</button>
-                                    <hr/>
-			</form>
-          <p><a class="btn btn-default btn-lg btn-block" href="#" role="button">Ayuda</a></p>
+            <hr/>
+                <form role="form">
+                    <div class="form-group">
+
+                            <label for="exampleInputEmail1">
+                                    Ingresar palabra
+                            </label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ingresar palabra"/>
+                    </div>
+
+                    <button type="submit" class="btn btn-info btn-lg btn-block">
+                            <span class="glyphicon glyphicon-ok-circle"></span> ENVIAR 
+                    </button>
+                        <hr/>
+                </form>
+          <p><a class="btn btn-info btn-lg btn-block" href="#" role="button">AYUDA</a></p>
         </div>
         <div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
-            
-            <h1 class="micolumna">Palabras escritas:</h1>
-          <ul class="micolumna">
+            <div class="panel panel-primary">
+                <div class="panel-heading" id="accordion">
+                    
+            <h3>Palabras escritas de Papá:</h3>
+                </div>
+            </div>
+          <ul class="micolumnainside">
                 <li>
                     <h4>Palabra uno <span class="glyphicon glyphicon-remove-sign"></span></h4>
                 </li>
@@ -90,7 +95,7 @@
                     <h4>Palabra dos <span class="glyphicon glyphicon-remove-sign"></span></h4>
                 </li>
                 <li>
-                    <h4>Palabra tre <span class="glyphicon glyphicon-ok-circle"></span></h4>
+                    <h4>Palabra tres <span class="glyphicon glyphicon-ok-circle"></span></h4>
                 </li>
                 <li>
                     <h4> Palabra cuatro <span class="glyphicon glyphicon-ok-circle"></span></h4>
@@ -191,7 +196,12 @@
         </div>
             
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
-          <h2>Porcentaje de Completitud</h2>
+            <div class="panel panel-primary">
+                <div class="panel-heading" id="accordion">
+                    
+          <h3>Porcentaje de Completitud</h3>
+                </div>
+            </div>
           <hr>
           <div class="progress progress-striped active">
             <div class="progress-bar progress-bar-success" role="progressbar"

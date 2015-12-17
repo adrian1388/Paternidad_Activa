@@ -11,7 +11,7 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-    padding-bottom: 40px; 
+/*    padding-bottom: 40px; */
   margin: 0;
   //background: rgb(0,0,250);
 }
@@ -31,7 +31,7 @@ summary {
   display: block;
 }
 footer{
-    //background: rgb(0,0,250);
+/*    //background: rgb(0,0,250);*/
     color:rgb(238,33,33); 
     
 }
@@ -1421,8 +1421,8 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  //background-color: rgb(20,20,200);
-  background-image:  url('../img/memo.jpg');
+/*  background-color: rgb(20,20,200);*/
+/*  background-image:  url('../img/memo.jpg');*/
   
 }
 .row {
@@ -1434,7 +1434,7 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  color: rgb(255,200,0);
+  color: rgb(255,50,50);
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -1753,7 +1753,7 @@ pre code {
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    color: rgb(255,200,0);
+    color: rgb(255,50,50);
   }
   .col-md-12 {
     width: 100%;
