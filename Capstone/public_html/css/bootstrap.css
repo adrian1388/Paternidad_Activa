@@ -11,8 +11,9 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
+    padding-bottom: 40px; 
   margin: 0;
-  background: rgb(0,0,250);
+  //background: rgb(0,0,250);
 }
 article,
 aside,
@@ -28,6 +29,11 @@ nav,
 section,
 summary {
   display: block;
+}
+footer{
+    //background: rgb(0,0,250);
+    color:rgb(238,33,33); 
+    
 }
 audio,
 canvas,
@@ -1415,7 +1421,8 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(20,20,200);
+  //background-color: rgb(20,20,200);
+  background-image:  url('../img/memo.jpg');
   
 }
 .row {
@@ -1427,6 +1434,7 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+  color: rgb(255,200,0);
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -1745,6 +1753,7 @@ pre code {
 @media (min-width: 992px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
+    color: rgb(255,200,0);
   }
   .col-md-12 {
     width: 100%;
@@ -1766,8 +1775,9 @@ pre code {
   }
   .col-md-6 {
     width: 50%;
-    border-width:5px;	
-    border-style:groove;
+    border-right-width:1px;	
+    border-right-style:inset;
+    color:rgb(85,236,125);
   }
   .col-md-5 {
     width: 41.66666667%;
@@ -1777,7 +1787,7 @@ pre code {
   }
   .col-md-3 {
     width: 25%;
-    color: rgb(250,250,0);
+    color: rgb(255,200,0);
   }
   .col-md-2 {
     width: 16.66666667%;

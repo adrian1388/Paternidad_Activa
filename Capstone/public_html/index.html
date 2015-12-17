@@ -24,6 +24,7 @@
 
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -35,8 +36,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+
           </button>
           <a class="navbar-brand" href="#">Capstones2015</a>
         </div>
@@ -57,17 +57,34 @@
     <div class="container-fluid">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+            
           <h2>Adivinar Palabras:</h2>
-          <img src="img/tungurahua.jpg" alt="imagen-nivel1" class="img-responsive" >
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <img src="img/tungurahua.jpg" alt="imagen-nivel1" class="img-thumbnail" >
+          <hr/>
+          			<form role="form">
+				<div class="form-group">
+					 
+					<label for="exampleInputEmail1">
+						Ingresar palabra
+					</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ingresar palabra"/>
+				</div>
+				
+				
+				<button type="submit" class="btn-group btn-warning btn-block">
+					<span class="glyphicon glyphicon-ok-circle"></span> OK 
+				</button>
+                                    <hr/>
+			</form>
+          <p><a class="btn btn-default btn-lg btn-block" href="#" role="button">Ayuda</a></p>
         </div>
-        <div class="col-md-3">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
           <h2>Heading</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
-        <div class="col-md-3">
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
@@ -76,10 +93,14 @@
 
       <hr>
 
-      <footer>
-        <p>&copy; Capstones2015</p>
+      <footer >
+          <div class="container">
+            <p >&copy; Capstones2015</p>
+        </div>
+        
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+    </div> <!-- /container -->    
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
