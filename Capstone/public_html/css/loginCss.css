@@ -9,6 +9,25 @@ and open the template in the editor.
 */
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400);
+/*@import url(http://db.onlinewebfonts.com/c/ca05bd57a546eb9007cb79fe70783db6?family=PT+Banana+Split);*/
+
+@font-face {
+    font-family:"PT Banana Split";
+    src:url("../fonts/BANANASP.eot?") format("eot"),
+        url("../fonts/BANANASP.woff") format("woff"),
+        url("../fonts/BANANASP.ttf") format("truetype"),
+        url("../fonts/BANANASP.svg#PT-BananaSplit") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"Action J";
+    src:url("../fonts/actionj.ttf");
+    font-weight:normal;
+    font-style:normal;
+}
+
 .container-fluid {
     position: relative;
 /*    overflow: hidden;*/
@@ -21,37 +40,97 @@ and open the template in the editor.
     height: auto;
     opacity: 0.6;
 }
+#men_msg{
+    position: relative; 
+    width: 50%;
+    opacity: 1.0;
+}
 body {
   background-color:#fff;
   -webkit-font-smoothing: antialiased;
   font: normal 14px Roboto,arial,sans-serif;
+  
+  
 }
 
+/*
 .container {
     padding: 25px;
     position: fixed;
+}*/
+.progress {
+    margin: 1px;
 }
-
 .form-login {
-    background-color: #EDEDED;
+    background-color: RGB(255, 255, 165);
     padding-top: 10px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 15px;
-    border-color:#d2d2d2;
+    border-color:#FFB347;
     border-width: 5px;
-    box-shadow:0 1px 0 #cfcfcf;
+    box-shadow:0 1px 0 #FFB347;
     color: rgb(255,50,50);
 }
 
-h4 { 
+h3 { 
  border:0 solid #fff; 
  border-bottom-width:1px;
  padding-bottom:10px;
  text-align: center;
+ font-family: "PT Banana Split";
+ 
 }
 
 .form-control {
     border-radius: 10px;
+    box-shadow:0 1px 0 #FFB347;
+    
 }
+.select.input-sm{
+    border-color: #FFB347;
+}
+
+.micolumnainside{
+    color:rgb(50,50,100);
+}
+.glyphicon-thumbs-up,
+.sp{
+    font-size: 50px;
+}
+
+/*
+.progress {
+    position: relative;
+}
+*/
+.bars {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bienv{
+    font-family: "Action J"
+}
+/*.coins{
+    width: 3%;
+}*/
+/*
+.progress .sr-only {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    color: black; // You might need to change it
+    text-align: center;
+    width: 100%;
+}*/
+/*.align-bars{
+    padding-right: 10px;
+    position: absolute;
+    right: 0px;
+    align-items: center;
+    border: 3px solid #73AD21;
+}
+.word{
+    left: 10px;
+}*/
