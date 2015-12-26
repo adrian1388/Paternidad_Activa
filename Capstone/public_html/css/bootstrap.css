@@ -892,8 +892,9 @@ th {
 }
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* align-content: center; */
 }
 *:before,
 *:after {
@@ -974,6 +975,7 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eee;
+  background: rgb(0,0,0);
 }
 .sr-only {
   position: absolute;
@@ -1421,9 +1423,9 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-/*  background-color: rgb(20,20,200);*/
-/*  background-image:  url('../img/memo.jpg');*/
-  
+  /* background-color: rgb(20,20,200); */
+  /* background-image:  url('../img/memo.jpg'); */
+  text-align: center;
 }
 .row {
   margin-right: -15px;
@@ -1784,6 +1786,9 @@ pre code {
   }
   .col-md-4 {
     width: 33.33333333%;
+    /* height: 500px; */
+    /* text-align: center; */
+    /* align-content: center; */
   }
   .col-md-3 {
     width: 25%;
