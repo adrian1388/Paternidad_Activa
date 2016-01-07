@@ -1,247 +1,103 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="ayuda de mejorar la relación entre padre e hijo(a)">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <title>CAPSTONE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
-
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        
+        <link rel="stylesheet" href="css/indexStyle.css">
+        <script src="js/indexJS.js"></script>
+        <script src="js/vendor/jquery/jquery.js"></script>
+        <script src="js/prefixfree.min.js"></script>
     </head>
     <body>
-        
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
+       
+        <div class="container-fluid">
+            <div class="row">
+                    <div class="col-md-12">
+ 
+                        <div class="mycss">CAPSTONE</div>
 
-          </button>
-          <a class="navbar-brand" href="#">Capstones2015</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-     <!-- </div>
-    </nav>-->
-     <img id="memo" src='img/memo.jpg'>
-
-    <div class="container-fluid">
-        
-      <!-- Example row of columns -->
-      <div class="row">
-          
-        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading" id="accordion">
-                    
-          <h2>Adivinar Palabras:</h2>
-                </div>
-            </div>
-          <img src="img/tungurahua.jpg" alt="imagen-nivel1" class="img-thumbnail" >
-            <hr/>
-                <form role="form">
-                    <div class="form-group">
-
-                            <label for="exampleInputEmail1">
-                                    Ingresar palabra
-                            </label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ingresar palabra"/>
                     </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4 " >
+                            <a href="#nivel2">
+                               <div class="perspective puerta" onclick="openDoor(this)">
+                                <div class="thumb puerta">
+                                </div>
+                                </div>
+                            </a>
+                                
+                    </div>
+                    <div class="col-md-4">
+                            <div class="jumbotron trans">
 
-                    <button type="submit" class="btn btn-info btn-lg btn-block">
-                            <span class="glyphicon glyphicon-ok-circle"></span> ENVIAR 
-                    </button>
-                        <hr/>
-                </form>
-          <p><a class="btn btn-info btn-lg btn-block" href="#" role="button">AYUDA</a></p>
-        </div>
-    <div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 ">
-            <div class="panel panel-primary">
-                <div class="panel-heading" id="accordion">
-                    
-            <h3>Palabras escritas de Papá:</h3>
-                </div>
-            </div>
-          <ul class="micolumnainside">
-                <li>
-                    <h4>Palabra uno <span class="glyphicon glyphicon-remove-sign"></span></h4>
-                </li>
-                <li>
-                    <h4>Palabra dos <span class="glyphicon glyphicon-remove-sign"></span></h4>
-                </li>
-                <li>
-                    <h4>Palabra tres <span class="glyphicon glyphicon-ok-circle"></span></h4>
-                </li>
-                <li>
-                    <h4> Palabra cuatro <span class="glyphicon glyphicon-ok-circle"></span></h4>
-                </li>
-            </ul> 
-            <hr/>
-           
-    <div class="container">
-    <div class="row">
-        <div class="col-md-5 col-sm-3 col-lg-6">
-            <div class="panel panel-primary">
-                <div class="panel-heading" id="accordion">
-                    <span class="glyphicon glyphicon-comment"></span> Chat
-                    <div class="btn-group pull-right">
-                        <a type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                            <span class="glyphicon glyphicon-chevron-down"></span>
-                        </a>
+                                    <div class="mycss_nivel1">NIVEL 1
+                                    
+                                        <p>
+                                            <a class="btn btn-primary btn-large" href="nivel1/nivel_1_main.html">JUGAR</a>
+                                    </p>
+                                    </div>
+
+                                    
+                            </div>
                     </div>
-                </div>
-            <div class="panel-collapse collapse" id="collapseOne">
-                <div class="panel-body">
-                    <ul class="chat">
-                        <li class="left clearfix"><span class="chat-img pull-left">
-                            <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
-                        </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
-                                        <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-                                    dolor, quis ullamcorper ligula sodales.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="right clearfix"><span class="chat-img pull-right">
-                            <img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" />
-                        </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
-                                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-                                    dolor, quis ullamcorper ligula sodales.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="left clearfix"><span class="chat-img pull-left">
-                            <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
-                        </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
-                                        <span class="glyphicon glyphicon-time"></span>14 mins ago</small>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-                                    dolor, quis ullamcorper ligula sodales.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="right clearfix"><span class="chat-img pull-right">
-                            <img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" />
-                        </span>
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>15 mins ago</small>
-                                    <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
-                                    dolor, quis ullamcorper ligula sodales.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="panel-footer">
-                    <div class="input-group">
-                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
-                        <span class="input-group-btn">
-                            <button class="btn btn-warning btn-sm" id="btn-chat">
-                                Send</button>
-                        </span>
+                    <div class="col-md-4">
                     </div>
-                </div>
             </div>
+            <div class="row">
+                    <div class="col-md-4">
+                          <div class="perspective puerta" onclick="openDoor(this)">
+                                <div class="thumb puerta">
+                                </div>
+                                </div>
+                    </div>
+                <div class="col-md-4" id="nivel2">
+                            <div class="jumbotron trans">
+                                     <div class="mycss_nivel1">NIVEL 2
+                                    
+                                        <p>
+                                            <a class="btn btn-primary btn-large" href="nivel_1_main.html">JUGAR</a>
+                                    </p>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
             </div>
-        </div>
+            <div class="row">
+                    <div class="col-md-4">
+                        <div class="perspective puerta" onclick="openDoor(this)">
+                                <div class="thumb puerta">
+                                </div>
+                                </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="jumbotron trans">
+                                    <div class="mycss_nivel1">NIVEL 3
+                                    
+                                        <p>
+                                            <a class="btn btn-primary btn-large" href="nivel_1_main.html">JUGAR</a>
+                                    </p>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+            </div>
     </div>
-</div>
-
-            
-
-        </div>
-            
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading" id="accordion">
-                    
-          <h3>Porcentaje de Completitud</h3>
-                </div>
-            </div>
-          <hr>
-          <p class="micolumnainside">Porcentaje Completado:</p>
-          <hr>
-          <div class="progress progress-striped active">
-              
-            <div class="progress-bar progress-bar-success" role="progressbar"
-                 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                 style="width: 40%">
-              <span class="sr-only">40% completado (éxito)</span>
-            </div>
-          </div>
-          <hr>
-        </div>
-      </div>
-
-      <hr>
-
-      
-    </div> <!-- /container --> 
-    <footer >
+         <footer>
+            <hr/>
           <div class="container">
             <p >&copy; Capstones2015</p>
         </div>
-        
-      </footer>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+         </footer>
     </body>
 </html>

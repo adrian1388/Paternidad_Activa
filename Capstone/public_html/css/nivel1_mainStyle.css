@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-ene-2016, 1:03:57
+    Author     : sergio
+*/
+
+body{background: url("../img/father-son.jpg")#FF9000;
+     background-size: cover !important;
+     background-repeat: no-repeat;
+}
+footer{
+   font-size: larger;
+   color: red;
+   font-style:italic;
+   width: 100%;
+    height: 81px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   
+}
+.mycss
+{
+font-weight:bold;
+color:#18257A;letter-spacing:1pt;word-spacing:2pt;font-size:54px;text-align:left;font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;line-height:1;margin:11px;padding:16px;width:392px;
+}
+
+.trans{
+    z-index:1;filter:alpha(opacity=70);float:left;-moz-opacity:.70;opacity:.70;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    
+}
