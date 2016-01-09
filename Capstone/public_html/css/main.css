@@ -3,9 +3,21 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.container-fluid {
-    position: relative;
-    overflow: hidden;
+
+  @import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
+  
+  *{
+ text-align:center;
+    font-family:'Love Ya Like A Sister', cursive;
+}
+  
+.container {
+        background: white;
+        height: 58em;
+        margin:0 auto;
+            width:50%;
+            margin-bottom: 0;
+
 }
 #memo {
     position: absolute;
@@ -17,9 +29,9 @@
     background-repeat: repeat-y;
 }
 body{
-    background: url("../img/father-son.jpg")#FF9000;
+     background:url('../img/fondo.jpg') #FF9000;
      background-size: cover !important;
-     background-repeat: no-repeat;
+     background-repeat: repeat;
 }
 .chat
 {
@@ -154,7 +166,8 @@ a:hover{
     
 }
 
-.hrP {border: 0; height: 2px; text-align: center; background-image: linear-gradient(left, #fff, #000, #fff);}
+.hrP {border: 0; height: 2px; text-align: center; 
+     background-image: linear-gradient(left, #fff, #000, #fff);}
 
 
 
@@ -253,7 +266,11 @@ nav.vertical {
 
 .mycss
 {
-font-weight:bold;color:#18257A;letter-spacing:4pt;word-spacing:16pt;font-size:54px;text-align:left;font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;line-height:2;margin:11px;padding:16px;width:392px;
+font-weight:bold;
+color:#18257A;
+letter-spacing:4pt;
+word-spacing:16pt;font-size:54px;
+text-align:left;line-height:2;margin:11px;padding:16px;width:392px;
 }
 .mycss2
 {
@@ -263,17 +280,6 @@ letter-spacing:4pt;
 word-spacing:16pt;
 font-size:54px;
 text-align:center;
-font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;
+//font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;
 line-height:2;margin:11px;padding:16px;width:90%;
-}
-footer{
-   font-size: larger;
-   color: red;
-   font-style:italic;
-   width: 100%;
-    height: 81px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-   
 }
