@@ -1,6 +1,30 @@
-body{background: url("../img/kids.jpg")#FF9000;
+@import url(https://fonts.googleapis.com/css?family=McLaren);
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+    @import url(https://fonts.googleapis.com/css?family=Corben:400,700&subset=latin,latin-ext);
+    @import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
+
+@font-face{
+    font-family:"Action J";
+    src:url("../fonts/actionj.ttf");
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face{
+    font-family:"Father";
+    src:url("../fonts/jlrfathersday.ttf");
+    
+}
+
+*{
+    
+font-family: 'McLaren', cursive;
+
+}
+body{
+    background:url('../img/fondo.jpg') #FF9000;
      background-size: cover !important;
-     background-repeat: no-repeat;
+     background-repeat: repeat;
+     
 }
 
 footer{
@@ -12,10 +36,13 @@ footer{
     
 }
 
-container
+.container
 {
+    background: white;
             margin:0 auto;
-            width:90%;
+            width:50%;
+            height: 100%;
+            margin-bottom: 0;
 }
 .puerta{
     
@@ -101,24 +128,73 @@ color:#383FA8;letter-spacing:10pt;
 word-spacing:30pt;
 font-size:69px;
 text-align:center;
-font-family:georgia, serif;
+font-family:'Love Ya Like A Sister', cursive;
 line-height:2;
 }
 
 .mycss_nivel1
 {
 font-weight:normal;
-color:#257A14;
-letter-spacing:3pt;
-word-spacing:9pt;
-font-size:78px;text-align:center;
-font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;
-line-height:2;margin:16px;padding:6px;
+width: 100%;
+color:#383FA8;
+height: auto;
+letter-spacing:1pt;
+word-spacing:2pt;
+font-size:20px;text-align:center;
+font-family: 'Chewy',cursive;
+line-height:2;margin:0.5em;padding:0.2em;
     
+}
+
+.col-md-4{
+    height: 100%;
+}
+
+.jumbotron{
+   height: 100%;
+   width: 100%;
+   padding-bottom: 1em !important;
+   padding-top: 1em !important;
+    padding-left: 1.8em !important;
+    padding-right: 1.8em !important;
+    margin: 0.1em;
+    background: white;
+    border: 0.1em solid rgb(0,123,255);
+
+    
+}
+.niveles{
+    margin: 0.5em;
 }
 
 .trans{
     z-index:1;filter:alpha(opacity=90);float:left;-moz-opacity:.90;opacity:.90;
     
 }
+.niveles_incompleto{
+    
+    background-color: rgb(0,123,255);
+    color:white;
+    
+}
+a:hover{
+    
+	text-decoration: none;
+}
 
+.niveles_incompleto .mycss_nivel1{
+    color:white;
+}
+.niveles_bloqueado{
+    background: rgb(217,217,217);
+    color: white;
+ 
+}
+
+.niveles_bloqueado .mycss_nivel1{
+        color: white;
+}
+
+.niveles_bloqueado .glyphicon-lock{
+    color: rgb(196,196,196);
+}

@@ -7,22 +7,15 @@ and open the template in the editor.
     Created on : 07-ene-2016, 1:03:57
     Author     : sergio
 */
+    @import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
 
-body{background: url("../img/father-son.jpg")#FF9000;
+
+body{
+    background:url('../img/fondo.jpg') #FF9000;
      background-size: cover !important;
-     background-repeat: no-repeat;
+     background-repeat: repeat;
 }
-footer{
-   font-size: larger;
-   color: red;
-   font-style:italic;
-   width: 100%;
-    height: 81px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-   
-}
+
 .mycss
 {
 font-weight:bold;
@@ -31,8 +24,61 @@ color:#18257A;letter-spacing:1pt;word-spacing:2pt;font-size:54px;text-align:left
 
 .trans{
     z-index:1;filter:alpha(opacity=70);float:left;-moz-opacity:.70;opacity:.70;
-    height: 400px;
+    
     width: 100%;
     text-align: center;
     
+}
+.container {
+        background: white;
+        height: 58em;
+        margin:0 auto;
+            width:50%;
+            margin-bottom: 0;
+
+}
+
+.jumbotron{
+   height: 100%;
+   width: 100%;
+   padding-bottom: 0.1em !important;
+   padding-top: 0.1em !important;
+    padding-left: 0.1em !important;
+    padding-right: 0.1em !important;
+    margin: 0.1em;
+    background: white;
+    border: 0.1em solid rgb(0,123,255);
+
+    
+}
+
+.nivel1_style{
+    height: 100%;
+   width: 100%;
+   height: 200px;
+   color:#18257A;
+   background: white;
+   border: 0.1em solid rgb(0,123,255);
+   font-size:1.3em;
+   padding-left:  0;
+    text-align:center;
+    font-family:'Love Ya Like A Sister', cursive;
+   
+}
+
+.nivel1_style a:hover{
+    text-decoration: none;
+}
+.top-left{
+    padding-left: 0.5em;
+    margin-left: 1em;
+}
+.bottom-left{
+    
+    height: 100%;
+}
+.nivel1_palabra{
+    padding-top: 2em;
+    text-align: center;
+    alignment-adjust: central;
 }
