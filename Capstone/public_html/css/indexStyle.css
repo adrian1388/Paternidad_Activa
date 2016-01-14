@@ -30,9 +30,9 @@ font-family: 'McLaren', cursive;
 
 }
 body{
-    background:url('../img/fondo_letras2.jpg') #FF9000;
+    background:url('../img/fondo_letras2.jpg') rgb(0,123,255);
      background-size: cover !important;
-     background-repeat: repeat;
+     background-repeat: no-repeat;
      
 }
 

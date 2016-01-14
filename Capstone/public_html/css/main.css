@@ -24,7 +24,7 @@
     color:rgb(217,40,90) !important;
 }
 body{
-     background:url('../img/fondo.jpg') #FF9000;
+     background:url('../img/fondo.jpg') rgb(0,123,255);
      background-size: cover !important;
      background-repeat: repeat;
 }
@@ -246,3 +246,4 @@ line-height:2;margin:11px;padding:16px;width:90%;
     margin-right: 0.1em !important;
     margin-bottom: 0.1em !important;
 }
+

@@ -11,7 +11,7 @@ and open the template in the editor.
 
 
 body{
-    background:url('../img/fondo.jpg') #FF9000;
+    background:url('../img/fondo.jpg') rgb(0,123,255);
      background-size: cover !important;
      background-repeat: repeat;
 }
@@ -86,4 +86,14 @@ color:#18257A;letter-spacing:1pt;word-spacing:2pt;font-size:54px;text-align:left
     padding-top: 2em;
     text-align: center;
     alignment-adjust: central;
+}
+
+.circulo_div{
+    margin-left: 0.14em !important;
+    margin-right: 0.1em !important;
+    margin-bottom: 0.1em !important;
+}
+
+#ancho{
+    width: 80% !important;
 }
