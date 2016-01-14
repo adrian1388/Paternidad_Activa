@@ -211,3 +211,7 @@ a:hover{
 .niveles_bloqueado .glyphicon-lock{
     color: rgb(196,196,196);
 }
+
+input{
+    color:#18257A !important;
+}

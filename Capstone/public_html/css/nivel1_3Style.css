@@ -36,6 +36,6 @@ and open the template in the editor.
     height: 500px;
     
 }
-*{
-   
+input{
+    color:#18257A !important;
 }
