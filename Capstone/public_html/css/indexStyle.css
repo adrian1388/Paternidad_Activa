@@ -30,7 +30,7 @@ font-family: 'McLaren', cursive;
 
 }
 body{
-    background:url('../img/fondo_letras2.jpg') rgb(0,123,255);
+    background:url('../img/fondo3.jpg') rgb(0,123,255);
      background-size: cover !important;
      background-repeat: no-repeat;
      
@@ -171,6 +171,8 @@ padding-left: 4px;
     margin: 0.1em;
     background: white;
     border: 0.1em solid rgb(0,123,255);
+    
+    color: #18257A !important;
 
     
 }
