@@ -1,3 +1,12 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-ene-2016, 4:04:30
+    Author     : sergio
+*/
 @import url(https://fonts.googleapis.com/css?family=McLaren);
 @import url(https://fonts.googleapis.com/css?family=Chewy);
     @import url(https://fonts.googleapis.com/css?family=Corben:400,700&subset=latin,latin-ext);
@@ -21,7 +30,7 @@ font-family: 'McLaren', cursive;
 
 }
 body{
-    background:url('../img/fondo.jpg') #FF9000;
+    background:url('../img/fondo_letras2.jpg') #FF9000;
      background-size: cover !important;
      background-repeat: repeat;
      
@@ -143,6 +152,8 @@ word-spacing:2pt;
 font-size:20px;text-align:center;
 font-family: 'Chewy',cursive;
 line-height:2;margin:0.5em;padding:0.2em;
+padding-left: 4px;
+    margin-left: 0px;
     
 }
 

@@ -1,7 +1,7 @@
 
 
 /* ==========================================================================
-   Author's custom styles
+   Author: Sergio Moncayo
    ========================================================================== */
 
   @import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
@@ -9,24 +9,19 @@
   *{
  text-align:center;
     font-family:'Love Ya Like A Sister', cursive;
+    
 }
   
 .container {
         background: white;
         height: 58em;
         margin:0 auto;
-            width:50%;
-            margin-bottom: 0;
+        width:50%;
+         margin-bottom: 0;
 
 }
-#memo {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.6;
-    background-repeat: repeat-y;
+.letra_color .tam-texto{
+    color:rgb(217,40,90) !important;
 }
 body{
      background:url('../img/fondo.jpg') #FF9000;
@@ -93,7 +88,13 @@ body{
     background-color: #555;
 }
 
-
+.mensajeria{
+    height: auto;
+    margin:0 0 0 0 !important;
+    padding-right: 0;
+    width: 100% !important;
+    padding-left: 0px; 
+}
 
 
 .micolumna{
@@ -106,70 +107,13 @@ body{
 
     color:rgb(50,50,100);
 }
-.chart {
-  position: relative;
-  display: inline-block;
-  width: auto;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  margin-right:0px;
-  margin-left: 0px;
-  /*font-weight:bold*/
-}
-.chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.percent {
-  display: inline-block;
-  line-height: 160px;
-  z-index: 2;
-  font-size: x-large;
-}
-.percent:after {
-  content: '%';
-  margin-left: 0.1em;
-  font-size: .9em;
-}
 
-a{
-	text-decoration:none;
-	font-family: 'Black Ops One', cursive;
-	font-size:35px;
-	color:#222;
-
-}
-a:hover{
-
-	color:#DF7401;
-	
-}
-.nsc{
-
-	width:100%;
-	text-align:right;
-	margin-top:50px;
-}
 .tam-texto{
     font-size: x-large;
-    
-}
-
-.imgP{
-    height: auto; 
-    width: auto; 
-    max-width: 500px; 
-    max-height: 800px;
-    
 }
 
 .hrP {border: 0; height: 2px; text-align: center; 
      background-image: linear-gradient(left, #fff, #000, #fff);}
-
-
 
 div.wrapper {
   margin: 20px auto;
@@ -233,7 +177,7 @@ nav.vertical {
 
         nav.vertical > ul > li > label + input {
           display: none;
-          visability: hidden;
+          visibility: hidden;
         }
         
           nav.vertical > ul > li > div {
@@ -269,8 +213,8 @@ nav.vertical {
 font-weight:bold;
 color:#18257A;
 letter-spacing:4pt;
-word-spacing:16pt;font-size:54px;
-text-align:left;line-height:2;margin:11px;padding:16px;width:392px;
+word-spacing:10pt;font-size:30px;
+text-align:left;line-height:2;margin:0.1em;padding:0.2em;width:auto;
 }
 .mycss2
 {
@@ -282,4 +226,23 @@ font-size:54px;
 text-align:center;
 //font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;
 line-height:2;margin:11px;padding:16px;width:90%;
+}
+
+.col-md-4{
+   // padding: 0.1em 0.1em 0.1em 0.1em;
+   padding-left: 0.5em !important;
+   padding-right: 0.5em !important;
+  
+}
+
+.vertical{
+    border-left: 0.1em solid rgb(0,123,255);
+    border-bottom: 0.1em solid rgb(0,123,255);
+    height: 30em;
+}
+
+.circulo_div{
+    margin-left: 0.14em !important;
+    margin-right: 0.1em !important;
+    margin-bottom: 0.1em !important;
 }

@@ -7,16 +7,23 @@ and open the template in the editor.
     Created on : 05-ene-2016, 23:07:51
     Author     : sergio
 */
+@import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
+
 *{
   box-sizing:border-box;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
-  font-family:arial;
+  font-family:'Love Ya Like A Sister', cursive;
 }
-body{background: url("../img/kids.jpg")#FF9000;
+body{background: url("../img/fondo_letras2.jpg")#FF9000;
      background-size: cover !important;
      background-repeat: no-repeat;
 }
+
+.container{
+    color: rgb(250,250,200);
+}
+
 h1{
   color:#AAA173;
   text-align:center;
