@@ -31,8 +31,9 @@ font-family: 'McLaren', cursive;
 }
 body{
     background:url('../img/fondoPaper.jpg') rgb(0,123,255);
-     background-size: cover !important;
+     background-size: 100% 100% !important;
      background-repeat: no-repeat;
+   
      
 }
 
