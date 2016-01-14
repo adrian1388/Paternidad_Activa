@@ -15,7 +15,7 @@ and open the template in the editor.
   -webkit-box-sizing:border-box;
   font-family:'Love Ya Like A Sister', cursive;
 }
-body{background: url("../img/fondo3.jpg")#FF9000;
+body{background: url("../img/fondoPaper.jpg")#FF9000;
      background-size: cover !important;
      background-repeat: no-repeat;
 }
