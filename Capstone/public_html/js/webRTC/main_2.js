@@ -47,12 +47,12 @@ var localStream;
 var pc1;
 var pc2;
 var offerOptions = {
-  offerToReceiveAudio: 1,
-  offerToReceiveVideo: 1
+  offerToReceiveAudio: 0.1,
+  offerToReceiveVideo: 0.1
 };
 
 function getName(pc) {
-  return (pc === pc1) ? 'pc1' : 'pc2';
+  return (pc === pc1) ? pc1 : pc2;
 }
 
 function getOtherPc(pc) {

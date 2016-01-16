@@ -11,7 +11,7 @@
    eqeqeq: true, forin: false, globalstrict: true, node: true,
    quotmark: single, undef: true, unused: strict */
 /* global mozRTCIceCandidate, mozRTCPeerConnection, Promise,
-mozRTCSessionDescription, webkitRTCPeerConnection, MediaStreamTrack */
+mozRTCSessionDescription, webkitRTCPeerConnection, MediaStreamTrack, URL, module, define, require */
 /* exported trace,requestUserMedia */
 
 'use strict';
