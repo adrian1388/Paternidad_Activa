@@ -25,9 +25,6 @@
     color:rgb(217,40,90) !important;
 }
 body{
-     background:url('../img/fondoPaper.jpg') rgb(0,123,255);
-     background-size: cover !important;
-     background-repeat: repeat;
 }
 .chat
 {
@@ -239,6 +236,7 @@ line-height:2;margin:11px;padding:16px;width:90%;
 .vertical{
     border-left: 0.1em solid rgb(0,123,255);
     border-bottom: 0.1em solid rgb(0,123,255);
+    border-right: 0.1em solid rgb(0,123,255);
     height: 30em;
 }
 
