@@ -66,17 +66,45 @@ function gotStream(stream) {
   callButton.disabled = false;
 }
 
+function gotRemoteStream(e) {
+  remoteVideo.srcObject = e.stream;
+  trace('pc2 received remote stream');
+}
+/*
+function gotStreamRemote(stream){
+    trace('Received remote stream');
+  remoteVideo.srcObject = stream;
+  remoteStreams = stream;
+  callButton.disabled = false;
+}
+*/
+
 function start() {
   trace('Requesting local stream');
-  startButton.disabled = true;
-  navigator.mediaDevices.getUserMedia({
-    audio: true,
-    video: true
-  })
-  .then(gotStream)
-  .catch(function(e) {
-    alert('getUserMedia() error: ' + e.name);
-  });
+  
+  if(startButton.disabled===false){
+      startButton.disabled = true;
+      navigator.mediaDevices.getUserMedia({
+        audio: true,
+        video: true
+      })
+      .then(gotStream)
+      .catch(function(e) {
+        alert('getUserMedia() error: ' + e.name);
+      });
+  }
+  
+  if(callButton.disabled===true && startButton.disabled===true ){
+      callButton.disabled = false;
+      navigator.mediaDevices.getUserMedia({
+        audio: true,
+        video: true
+      })
+      .then(gotRemoteStream)
+      .catch(function(e) {
+        alert('getUserMedia() error: ' + e.name);
+      });
+  }
 }
 
 function call() {
@@ -84,8 +112,8 @@ function call() {
   hangupButton.disabled = false;
   trace('Starting call');
   startTime = window.performance.now();
-  var videoTracks = localStream.getVideoTracks();
-  var audioTracks = localStream.getAudioTracks();
+  var videoTracks = remoteStreams.getVideoTracks();
+  var audioTracks = remoteStreams.getAudioTracks();
   if (videoTracks.length > 0) {
     trace('Using video device: ' + videoTracks[0].label);
   }
@@ -152,10 +180,6 @@ function onSetSessionDescriptionError(error) {
   trace('Failed to set session description: ' + error.toString());
 }
 
-function gotRemoteStream(e) {
-  remoteVideo.srcObject = e.stream;
-  trace('pc2 received remote stream');
-}
 
 function onCreateAnswerSuccess(desc) {
   trace('Answer from pc2:\n' + desc.sdp);
