@@ -87,10 +87,10 @@ function call() {
   var videoTracks = localStream.getVideoTracks();
   var audioTracks = localStream.getAudioTracks();
   if (videoTracks.length > 0) {
-    trace('Using video device: ' + videoTracks[0].label);
+    trace('Using video device: ' + videoTracks[1].label);
   }
   if (audioTracks.length > 0) {
-    trace('Using audio device: ' + audioTracks[0].label);
+    trace('Using audio device: ' + audioTracks[1].label);
   }
   var servers = null;
   pc1 = new RTCPeerConnection(servers);
