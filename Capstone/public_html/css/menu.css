@@ -1,0 +1,103 @@
+
+a, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgb(21,176,166);
+}
+
+nav ul {
+    margin: 0px;
+}
+
+nav ul li {
+    background-color: rgb(21,176,166);
+}
+
+nav > ul {
+    width: 100%;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul {
+    padding: 0 0px;
+    border-radius: 10px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav ul li {
+    float: left;
+    min-height: 60px;
+}
+
+nav ul li:hover {}
+nav ul li:hover a {}
+
+nav ul li a {
+    display: block;
+    padding: 20px 35px;
+    text-decoration: none;
+}
+
+nav ul ul {
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+nav ul ul li {
+    float: none;
+    position: relative;
+    min-height: 70px;
+}
+nav ul ul li a {
+    padding: 15px 40px;
+}
+nav ul ul li a:hover {
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top:0;
+}
+
+nav ul ul ul li {
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+
+.inline-block {
+    display: inline-block;
+}
+
+.perfil-mini {
+    border-radius: 80%;
+}
+
+#perfil-conectado {
+    position: relative;
+    top: 24px;
+    left: -18px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.no-padding {
+    padding: 0;
+}
