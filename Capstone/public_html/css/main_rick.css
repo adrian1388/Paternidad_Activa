@@ -1,6 +1,19 @@
 
+#estado_papa {
+    color: black;
+}
+
+.nav_height {
+    height: 60px;
+}
+
+.center {
+    margin: 0 auto;
+}
+
 .inline-block {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .perfil-mini {
@@ -23,4 +36,13 @@
 
 .no-padding {
     padding: 0;
+}
+
+.glyphicon-globe {
+    font-size: xx-large;
+    vertical-align: middle;
+}
+
+#papa_usuario {
+    padding-top: 10px;
 }

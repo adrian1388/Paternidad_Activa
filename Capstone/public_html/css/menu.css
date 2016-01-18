@@ -8,19 +8,31 @@ nav {
 }
 
 nav ul {
+    padding: 0;
     margin: 0px;
-}
-
-nav ul li {
-    background-color: rgb(21,176,166);
+    border-radius: 10px;
+    list-style: none;
+    position: relative;
 }
 
 nav > ul {
-    width: 100%;
+    width: 85%;
+}
+
+nav ul li {
+    float: left;
 }
 
 nav ul li a {
     color: white;
+}
+
+nav > ul > li {
+    background-color: rgb(21,176,166);
+}
+
+nav > ul > li > ul li {
+    background-color: rgb(0,163,163);
 }
 
 nav ul ul {
@@ -31,31 +43,19 @@ nav ul li:hover > ul {
     display: block;
 }
 
-nav ul {
-    padding: 0 0px;
-    border-radius: 10px;
-    list-style: none;
-    position: relative;
-    display: inline-table;
-}
-
 nav ul:after {
     content: "";
     clear: both;
     display: block;
 }
 
-nav ul li {
-    float: left;
-    min-height: 60px;
+nav > ul > li > a {
+    line-height: 60px;
 }
-
-nav ul li:hover {}
-nav ul li:hover a {}
 
 nav ul li a {
     display: block;
-    padding: 20px 35px;
+    padding: 0px 20px;
     text-decoration: none;
 }
 
@@ -68,12 +68,10 @@ nav ul ul {
 nav ul ul li {
     float: none;
     position: relative;
-    min-height: 70px;
+    margin-left: 1px;
 }
 nav ul ul li a {
-    padding: 15px 40px;
-}
-nav ul ul li a:hover {
+    padding: 10px 30px;
 }
 
 nav ul ul ul {
@@ -83,14 +81,8 @@ nav ul ul ul {
 }
 
 nav ul ul ul li {
-    width: 250px;
+    min-width: 200px;
 }
-
-
-
-
-
-
 
 
 
