@@ -1,0 +1,113 @@
+
+body {
+    background-color: rgb(28, 119, 218);
+    color: white;
+}
+
+#main {
+    width: 80%;
+}
+
+.azul {
+    color: rgb(28, 119, 218);
+}
+
+
+#wrap-controls {
+    width: 500px;
+}
+
+#wrap-controls input {
+    text-align: center;
+}
+
+#controls {
+    width: 350px;
+}
+
+
+#wrap-respuestas {
+    width: 300px;
+}
+
+#wrap-respuestas h2 {
+    color: white;
+}
+
+.wrap-palabra {
+    float: left;
+}
+
+
+
+.palabra {
+    background-color: white;
+
+    font-weight: bold;
+    font-size: larger;
+
+    text-align: center;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.palabra-s {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.palabra-m {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.palabra-l {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.palabra:hover {
+    cursor: pointer;
+}
+
+.palabra-monedas {
+    display: none;
+    position: relative;
+}
+
+.wrap-pista {
+    color: black;
+}
+
+.pista {
+    min-height: 30px;
+}
+
+.pista span {
+    /* background-color: rgb(217,217,217); */
+    background-color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.pista-control {
+    width: 400px;
+}
+
+.pista-control button {
+    color: white;
+    background: orange;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
