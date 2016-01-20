@@ -23,8 +23,7 @@ body {
 }
 
 .register select {
-  width: 67.5%;/*
-  font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;*/
+  width: 65.4%;
   padding: 5px;
   font-size: 0.9em;
   border-radius: 5px;
@@ -79,13 +78,13 @@ body {
 }
 .register label {
   display: inline-block;
-  width: 30%;
+  width: 32%;
   text-align: right;
   font-size: 0.9em;
   /*margin: 10px;*/
 }
 .register input[type=text], .register input[type=password] {
-  width: 65%;
+  width: 63%;
   /*font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;*/
   padding: 5px;
   font-size: 0.9em;
@@ -123,8 +122,8 @@ body {
 }
 .register .or {
   position: absolute;
-  width: 50px;
-  left: 50%;
+    width: 130px;
+    left: 41%;
   background: #F0F0F0;
   text-align: center;
   margin: -10px 0 0 -25px;
