@@ -8,6 +8,11 @@
 
     <title></title>
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="css/libs/normalize_v3.0.3.css">
 
     <link rel="stylesheet" href="css/main_rick.css">
@@ -22,22 +27,30 @@
 
         <div style="width: 300px" class="inline-block"></div>
 
-        <div id="wrap-adivinar" class="inline-block">
-            <div class="wrap-imagen">
+        <div class="wrap-adivinaza inline-block">
+            <div class="adivinaza">
                 <img src="img/nivel1/bombero2.jpg" width="500" alt="Bombero"/>
+
+                <!-- <p>Cosas que haces al despertarte</p> -->
+
             </div>
-            <div id="wrap-controls">
-                <div id="controls" class="center">
-                    <button>Pista ?</button>
+            <div class="wrap-controls">
+                <div class="controls center">
+                    <button id="pista">
+                        <span>Pista</span>
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                    </button>
                     <input type="text" placeholder="Intenta con una palabra"/>
-                    <button>✔</button>
+                    <button id="enviar">
+                        <span class="glyphicon glyphicon-ok"></span>
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div id="wrap-respuestas" class="inline-block">
+        <div class="wrap-respuestas inline-block">
             <h2 class="align-center">Respuestas</h2>
-            <div id="respuestas" class="azul">
+            <div class="respuestas azul">
                 <div class="wrap-palabra">
                     <div class="palabra palabra-s">Agua</div>
                     <div class="palabra-monedas">30 C</div>
@@ -64,14 +77,14 @@
 
             <div class="wrap-pista">
                 <div class="pista">
-                    <span>M</span>
-                    <span>A</span>
-                    <span>N</span>
-                    <span>G</span>
-                    <span>U</span>
-                    <span>E</span>
-                    <span>R</span>
-                    <span>A</span>
+                    <div>M</div>
+                    <div>A</div>
+                    <div>N</div>
+                    <div>G</div>
+                    <div>U</div>
+                    <div>E</div>
+                    <div>R</div>
+                    <div>A</div>
                 </div>
                 <div class="pista-control">
                     <button class="center">Mostrar Letra</button>
@@ -81,5 +94,44 @@
 
     </div>
 
+    <br/><br/><br/><br/><br/><br/>
+
+<div id="popup-comprar">
+    <div id="popup-comprar-mensaje">
+        <p>¿Quieres usar el comodin de letras?</p>
+        10 <img src="img/icons/coin-2.png" width="15"/>
+    </div>
+    <div id="popup-comprar-confirmar">
+        <div>
+            <span class="glyphicon glyphicon-remove"></span>
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok"></span>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

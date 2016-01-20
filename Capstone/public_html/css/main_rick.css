@@ -36,6 +36,10 @@ button {
     border: 0;
 }
 
+input {
+    border: 0;
+}
+
 .clear {
     clear: both;
 }

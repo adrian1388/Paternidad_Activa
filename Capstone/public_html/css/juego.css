@@ -12,25 +12,58 @@ body {
     color: rgb(28, 119, 218);
 }
 
-
-#wrap-controls {
+.adivinaza {
     width: 500px;
-}
+    height: 300px;
 
-#wrap-controls input {
+    line-height: 300px;
     text-align: center;
 }
 
-#controls {
-    width: 350px;
+.adivinaza p {
+    font-size: xx-large;
 }
 
+.wrap-controls {
+    width: 500px;
+    margin-top: 20px;
+}
 
-#wrap-respuestas {
+.wrap-controls input {
+    text-align: center;
+}
+
+.controls {
+    width: 412px;
+}
+
+.controls input {
+    width: 260px;
+    height: 35px;
+
+    color: black;
+    border-radius: 10px;
+}
+
+.controls button {
+    height: 35px;
+
+    background-color: rgb(49,83,196);
+
+    padding: 0px 15px;
+    border-radius: 10px;
+}
+
+.controls #enviar {
+    padding: 0px 25px;
+    border-radius: 10px;
+}
+
+.wrap-respuestas {
     width: 300px;
 }
 
-#wrap-respuestas h2 {
+.wrap-respuestas h2 {
     color: white;
 }
 
@@ -90,10 +123,12 @@ body {
     min-height: 30px;
 }
 
-.pista span {
-    /* background-color: rgb(217,217,217); */
+.pista div {
+    width: 29px;
+    display: inline-block;
     background-color: white;
-    padding: 8px;
+    padding: 8px 0px;
+    text-align: center;
     border-radius: 4px;
 }
 
@@ -108,6 +143,75 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+
+
+
+
+
+
+
+
+#popup-comprar {
+    width: 201px;
+    margin: 0 auto;
+}
+
+#popup-comprar-mensaje {
+    height: 100px;
+
+    vertical-align: middle;
+
+    background-color: white;
+
+    color: lightskyblue;
+    text-align: center;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#popup-comprar-confirmar {
+    background-color: lightskyblue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#popup-comprar-confirmar div {
+    width: 100px;
+
+    display: table-cell;
+
+    line-height: 70px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#popup-comprar-confirmar div:first-child {
+    border-right: solid rgb(49,83,196) 1px;
+}
+
+#popup-comprar-confirmar div:hover {
+    cursor: pointer;
+}
+
+#popup-comprar-confirmar div span {
+    font-size: xx-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
