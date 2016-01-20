@@ -110,9 +110,26 @@ body {
     cursor: pointer;
 }
 
+.palabra-monedas-s {
+    bottom: 45px;
+    left: 15px;
+}
+
+.palabra-monedas-m {
+    bottom: 45px;
+    left: 50px;
+}
+
+.palabra-monedas-l {
+    bottom: 45px;
+    left: 65px;
+}
+
 .palabra-monedas {
-    display: none;
+    height: 0;
+    color: black;
     position: relative;
+    font-size: xx-small;
 }
 
 .wrap-pista {
