@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Registro de Padre e Hijo</title>
+    
+        <link rel="stylesheet" href="css/style_reg.css">
+
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="js/js_reg.js"></script>
+
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="title">
+        <h1>Registro de Jugadores</h1>
+      </div>
+     
+      <div class="formulario">
+      
+        <div class="one">
+          <div class="register">
+            <h3 style="text-align: right;">Informaci&oacute;n de pap&aacute;</h3>
+            <form id="reg-form">
+              <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" spellcheck="false" placeholder="Juan José Arnulfio"/>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" spellcheck="false" placeholder="juan.arnulfio@xyz.com"/>
+              </div>
+              <div>
+                <label for="sexo">Sexo</label>
+                <select class='form-control' id="sexoPadre">
+                  <option value="" disabled selected hidden>Seleccione uno...</option>
+                  <option value="0">Hombre</option>
+                  <option value="1">Mujer</option>
+                </select>
+              </div>
+              <div>
+                <label for="username">Usuario</label>
+                <input type="text" id="username" spellcheck="false" placeholder="juanarn7" />
+              </div>
+              <div>
+                <label for="password">Contrase&ntilde;a</label>
+                <input type="password" id="password" />
+              </div>
+              <div>
+                <label for="password-again">Confirmar Contrase&ntilde;a</label>
+                <input type="password" id="password-again" />
+              </div>
+            </form>
+            <div class="sep">
+              <span class="or">OR</span>
+            </div>
+            <div class="connect">
+              <div class="social-buttons facebook">
+                <a href="#">
+                  <span>Facebook</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dos">
+          <div class="register">
+            <h3>Informaci&oacute;n de hijo</h3>
+            <form id="reg-form">
+              <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" spellcheck="false" placeholder="Pepe Arnulfio Soler"/>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" spellcheck="false" placeholder="pepito@xyz.com"/>
+              </div>
+              <div>
+                <label for="sexo">Sexo</label>
+                <select class='form-control' id="sexoHijo">
+                  <option value="" disabled selected hidden>Seleccione uno...</option>
+                  <option value="0">Hombre</option>
+                  <option value="1">Mujer</option>
+                </select>
+              </div>
+              <div>
+                <label for="username">Usuario</label>
+                <input type="text" id="username" spellcheck="false" placeholder="pepito55" />
+              </div>
+              <div>
+                <label for="password">Contrase&ntilde;a</label>
+                <input type="password" id="password" />
+              </div>
+              <div>
+                <label for="password-again">Confirmar Contrase&ntilde;a</label>
+                <input type="password" id="password-again" />
+              </div>
+            </form>
+            <div class="sep">
+              <span class="or">OR</span>
+            </div>
+            <div class="connect">
+              <div class="social-buttons facebook">
+                <a href="#">
+                  <span>Facebook</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="boton_crear">
+              <div>
+                <label></label>
+                <input type="submit" value="Create Account" id="create-account" class="button"/>
+              </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
