@@ -1,0 +1,97 @@
+
+
+    @import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
+    @import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+body{
+  background:url('../img/fondoPaper3.jpg') #A2E9E4;
+  background-size: 100%;
+  background-repeat: repeat;
+  font-family: 'Bree Serif', serif;
+}
+
+.container {
+	margin:0 auto;
+	width:52%;
+}
+
+.title{
+  text-align: center;
+  border-bottom: 2px solid #15B0A6;
+  text-shadow: 1px 1px #15B0A6;
+}
+
+.cuadro{
+	float: left;
+	margin:1em;
+	padding:1em;
+  border-radius: 5px;
+  border: 2px solid #15B0A6;
+	height: 10em;
+	width: 10em;
+}
+.txt_subnivel{
+	height:50%;
+	text-align: center;
+}
+
+.img_subnivel{
+}
+.circulo_div{
+    padding-left: 25%;
+}
+
+a {
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #15B0A6;
+  box-shadow: 0 1px 0 0 #15B0A6 inset;
+  background: #15B0A6;
+  background: -webkit-linear-gradient(#15B0A6, #449280);
+  background: -moz-linear-gradient(#15B0A6, #449280);
+  background: -o-linear-gradient(#15B0A6, #449280);
+  background: linear-gradient(#15b0a6, #449280);
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  background: #ACE9E5;
+  background: -webkit-linear-gradient(#ACE9E5, #15B0A6);
+  background: -moz-linear-gradient(#ACE9E5, #15B0A6);
+  background: -o-linear-gradient(#ACE9E5, #15B0A6);
+  background: linear-gradient(#ace9e5, #15b0a6);
+}
+
+a:active {
+    text-decoration: underline;
+}
+/* 
+a {
+	color: #000;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+  text-shadow: 1px 1px #15B0A6;
+}
+
+a:active {
+    text-decoration: underline;
+}
+ */

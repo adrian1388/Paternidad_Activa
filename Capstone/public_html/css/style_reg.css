@@ -2,7 +2,8 @@
 @import url(http://fonts.googleapis.com/css?family=Bree+Serif);
 
 body {
-  background: #fff;
+  background: url('../img/fondoPaper3.jpg') #A2E9E4;
+  background-size: 100%;
   font-family: 'Bree Serif', serif;
 }
 
