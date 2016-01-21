@@ -1,0 +1,103 @@
+
+    @import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
+    @import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+body{
+  background:url('../img/fondoPaper3.jpg') #A2E9E4;
+  background-size: 100%;
+  background-repeat: repeat;
+  font-family: 'Bree Serif', serif;
+}
+
+.container {
+	margin:0 auto;
+	width:52%;
+}
+
+.title{
+  text-align: center;
+  border-bottom: 2px solid #15B0A6;
+  text-shadow: 1px 1px #15B0A6;
+}
+
+.flo {
+	float: left;
+}
+
+.register {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: #444;
+    background-color: #F0F0F0;
+    box-shadow: 10px 0 10px 0 #15B0A6;
+}
+
+
+.register input {
+  width: 25em;
+  /*font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;*/
+  padding: 5px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  background: rgba(28,181,232,0.07);
+}
+.register input[type=text]:focus, .register input[type=password]:focus {
+  background: #FFFFFF;
+}
+.register label {
+    display: inline-block;
+    width: 5em;
+    text-align: right;
+    font-size: 0.9em;
+    /* margin: 10px; */
+}
+.button:hover {
+    color: #000;
+    background: #ACE9E5;
+    background: -webkit-linear-gradient(#ACE9E5, #15B0A6);
+    background: -moz-linear-gradient(#ACE9E5, #15B0A6);
+    background: -o-linear-gradient(#ACE9E5, #15B0A6);
+    background: linear-gradient(#ace9e5, #15b0a6);
+}
+.button {
+    font-size: 1em;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #15B0A6;
+    box-shadow: 0 1px 0 0 #15B0A6 inset;
+    background: #15B0A6;
+    background: -webkit-linear-gradient(#15B0A6, #449280);
+    background: -moz-linear-gradient(#15B0A6, #449280);
+    background: -o-linear-gradient(#15B0A6, #449280);
+    background: linear-gradient(#15b0a6, #449280);
+}
+.boton_aceptar {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 2px;
+    border-top: 2px solid #15B0A6;
+    font-family: 'Bree Serif', serif;
+}
+.sep {
+	display: block;
+    border: 1px solid #15B0A6;
+    position: relative;
+    margin: 35px 20px 15px 20px;
+}
+.ord {
+    position: absolute;
+    width: 13em;
+    left: 33%;
+    background: #F0F0F0;
+    text-align: center;
+    margin: -10px 0 0 -25px;
+    line-height: 20px;
+}
+#diezpalabras {
+
+    width: 10em;
+}

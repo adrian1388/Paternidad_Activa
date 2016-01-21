@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <title>CAPSTONE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/crear_juego_style.css" type="text/css"/>
+
+        <script src="../js/vendor/jquery/jquery.js"></script>
+        <script src="../js/nivel1_3JS.js"></script>
+        
+
+
+    </head>
+    <body>
+    	<div class="container">
+    		<div class="row">
+                <div class="title">
+                    <h1 >Crear Juego</h1>
+                </div>
+            </div>
+    		<div class="register">
+	    		
+	    		<div class="row">
+	    			<form role="form">
+	    				<h3>Ingresar frase o acertijo:</h3>
+	    				<div class="form-group">
+	    					<input type="text" class="form-horizontal" id="exampleInputEmail1" placeholder="Ej.: animales permitidos para la caza"/>
+	    					<button type="submit" class="btn-info btn-lg form-horizontal">
+	    						<span class="glyphicon glyphicon-ok-sign"></span>
+	    					</button>
+	    				</div>
+	    			</form>
+	                 
+	                <div class="panel panel-default">
+		                <div class="panel-body" >
+
+		                    <!-- Standar Form -->
+		                    <h3>Seleccionar imagen:</h3>
+		                    <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+		                      <div class="form-inline">
+		                        <div class="form-group flo">
+		                          <input type="file" name="files[]" id="js-upload-files" multiple>
+		                        </div>
+		                        <button type="submit" class="btn btn-sm btn-primary flo" id="js-upload-submit">Cargar Imagen</button>
+		                      </div>
+		                    </form>
+		                    
+		                    <!-- Progress Bar -->
+		                    <!-- <div class="progress ">
+		                        <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+		                        aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+		                          40%
+		                        </div>
+		                    </div> -->
+		                    
+		                    <!-- Upload Finished -->
+		                    <!-- <div class="js-upload-finished">
+		                        <h5 >Progreso de la imagen</h5>
+		                      	<div class="list-group">
+		                        	<a href="#" class="list-group-item list-group-item-success   ">
+		                        		<span class="badge alert-success pull-right">Success</span>image-01.jpg
+		                        	</a>
+		                      	</div>
+		                    </div> -->
+		                </div>
+	                
+	             	</div>
+	         	</div>
+	         	<div style="height:2em;"></div>
+	         	<div class="sep">
+		          	<span class="ord">Palabras a adivinar</span>
+		        </div>
+	         	<div class="row">
+	        		<div class="col-xs-12 col-md-12">
+	    				<form>
+	            			<div class="form-group multiple-form-group" data-max=10>
+								<div class="form-group input-group grupo" id="grupo" >
+									<label for="name">Palabra 1</label>
+	                            	<input type="text" name="multiple[]" class="form-control" placeholder="Ingrese Palabra">
+	                            		<span class="input-group-btn">
+	                            			<button type="button" class="btn btn-default btn-add" >+
+	                                    	</button>
+	                                    </span>
+	                    		</div>
+	               				<h5 style="text-align: right;"> M&aacute;ximo 10 palabras</h5>
+	            			</div>
+				
+	        			</form>
+	    			</div> 
+	         	</div>
+	        </div>
+        <div class="row boton_aceptar">
+	        <div class="col-md-12">
+	            <div class="mycss2">
+	                
+                    <div class="form-group">
+                        <button type="button" class="btn-info btn-lg form-horizontal button" onclick="window.location='nivel_1_main.html';">
+                            <span class="glyphicon glyphicon-remove-sign"> Cancelar</span> 
+                        </button>
+
+                    <button type="button" class="btn-info btn-lg form-horizontal button" onclick="window.location='nivel1_3_game_hijo.html';">
+                        <span class="glyphicon glyphicon-ok-sign"> Aceptar</span>
+                    </button>
+
+
+                    </div>
+               
+                        
+                     </div>
+	             </div>
+	        </div>
+	         
+	    </div> <!-- /container -->
+    
+    </body>
+</html>
