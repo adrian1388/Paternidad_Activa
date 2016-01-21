@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Richard Jara">
+
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/libs/normalize_v3.0.3.css">
+
+    <link rel="stylesheet" href="css/pista_ayuda_style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+        <ul class="center">
+            <li class="float-left">
+                <a href="#index"></a>
+            </li>
+            <li class="float-left">
+                <a href="#">Niveles</a>
+                <ul>
+                    <li>
+                        <a href="">
+                            <div>Nivel 1</div>
+                            <div>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span>Animales de granja</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span>Util para los abuelitos</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>Nivel 2</div>
+                            <div>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>Nivel 3</div>
+                            <div>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="float-left">
+                <a href="#">Juegos de papá</a>
+            </li>
+            <li class="float-right">
+                <a href="#">
+                    Salir
+                </a>
+            </li>
+            <li class="float-right">
+                <a href="#">
+                    <span class="glyphicon glyphicon-globe"></span>
+                </a>
+            </li>
+            <li class="float-right">
+                <div class="nav_height">
+                    <div class="nav_height inline-block">
+                        <img class="perfil-mini" src="img/icons/putin.png" width="50" alt="Foto de perfil"/>
+                        <span id="perfil-conectado" class="glyphicon glyphicon-ok-sign"></span>
+                    </div>
+                    <div class="nav_height inline-block">
+                        <a id="papa_usuario" href="#perfil">Putin</a>
+                        <div id="estado_papa">Conectado</div>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Jugar con papá
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Pedir ayuda a papá
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <div id="main" class="center">
+        <h1 class="align-center">Pepito necesita tu ayuda, ¡adivina unas palabras por él!</h1>
+
+        <div class="wrap-adivinaza inline-block">
+            <div class="adivinaza">
+                <img src="img/nivel1/bombero2.jpg" width="500" alt="Bombero"/>
+
+                <!-- <p>Cosas que haces al despertarte</p> -->
+
+            </div>
+            
+        </div>
+
+        <div class="wrap-respuestas inline-block">
+            <h2 class="align-center">Respuestas</h2>
+            <div class="respuestas azul">
+                <div class="wrap-palabra">
+                    <div class="palabra palabra-s">
+                        <div>Agua</div>
+                        <div class="palabra-monedas palabra-monedas-s">
+                            <span>30</span>
+                            <img src="img/icons/coin-2.png" alt="Monedas" width="15"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-palabra">
+                    <div class="palabra palabra-l">
+                        <div>Manguera</div>
+                        <div class="palabra-monedas palabra-monedas-l">
+                            <span>120</span>
+                            <img src="img/icons/coin-2.png" alt="Monedas" width="15"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-palabra">
+                    <div class="palabra palabra-m">
+                        <div>Bombero</div>
+                        <div class="palabra-monedas palabra-monedas-m">
+                            <span>80</span>
+                            <img src="img/icons/coin-2.png" alt="Monedas" width="15"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-palabra" title="Pista 2">
+                    <div class="palabra  palabra-s">
+                        <div>?</div>
+                        <div class="palabra-monedas palabra-monedas-s">
+                            <span>50</span>
+                            <img src="img/icons/coin-2.png" alt="Monedas" width="15"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-palabra" title="Pista 1">
+                    <div class="palabra palabra-s">
+                        <div>¿?</div>
+                        <div class="palabra-monedas palabra-monedas-s">
+                            <span>80</span>
+                            <img src="img/icons/coin-2.png" alt="Monedas" width="15"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-palabra">
+                    <div class="palabra palabra-s">
+                        <div>Desoxirribonucleico</div>
+                        <div class="palabra-monedas palabra-monedas-l">
+                            <span>800</span>
+                            <img src="img/icons/coin-2.png" alt="Monedas" width="15"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br class="clear"/><br/><br/>
+			
+        </div>
+		
+		<div class="wrap-controls" >
+			<div class="controls ">
+				<label class="pista">
+					Pista 1:
+				</label>
+				<label class="pista_value">
+					Es muy caliente.
+				</label>
+				<input type="text" placeholder="Intenta con una palabra"/>
+				<button id="enviar">
+					<span class="glyphicon glyphicon-check"></span> Verificar
+				</button>
+			</div>
+			<div class="controls ">
+				<label class="pista">
+					Pista 2:
+				</label>
+				<label class="pista_value">
+					El ser humano respira oxígeno pero en un incendio no es fácil respirar.
+				</label>
+				<input type="text" placeholder="Intenta con una palabra"/>
+				<button id="enviar">
+					<span class="glyphicon glyphicon-remove"></span> Verificar
+				</button>
+			</div>
+		</div>
+		<div class="button_page center">
+			<button id="enviar">
+				Enviar Ayuda
+				<span class="glyphicon glyphicon-send"></span>
+			</button>
+		</div>
+    </div>
+
+    <br/><br/>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

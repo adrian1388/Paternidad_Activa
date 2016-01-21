@@ -1,0 +1,367 @@
+
+/* @import url(https://fonts.googleapis.com/css?family=McLaren); */
+
+#estado_papa {
+    color: black;
+}
+
+.nav_height {
+    height: 60px;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.perfil-mini {
+    border-radius: 80%;
+}
+
+#perfil-conectado {
+    position: relative;
+    top: 24px;
+    left: -18px;
+}
+
+button {
+    border: 0;
+}
+
+input {
+    border: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.glyphicon-globe {
+    font-size: xx-large;
+    vertical-align: middle;
+}
+#exampleInputEmail1{
+    color:black;
+    width: 20em;
+    margin-top: 2em;
+    margin-left: 15em;
+
+}
+
+.load_img{
+    margin-top: 3em;
+    margin-right: 28em;
+}
+.submit_button{
+
+    margin-top: 2em;
+    margin-left: 0.4em;   
+}
+.create_nivel{
+    margin-right: 31em;
+}
+
+
+#papa_usuario {
+    padding-top: 10px;
+}
+
+.multiple-form-group{
+    width: 35em;
+    margin-top: 2em;
+    margin-left: 15em;
+}
+
+.badge{}
+/*adrian*/
+.controls {
+	width: 100em;
+    margin-bottom: 0.2em;
+}
+.controls input {
+    width: 20em;
+}
+label.pista {
+    width: 4.3em;
+}
+label.pista_value {
+    width: 20em;
+}
+
+.controls input {
+    width: 260px;
+    height: 35px;
+    color: black;
+    border-radius: 10px;
+}
+.wrap-controls input {
+	padding-left: 1em;
+}
+
+#enviar {
+    padding: 0px 25px;
+    border-radius: 10px;
+}
+.controls button {
+    height: 35px;
+    background-color: rgb(49,83,196);
+}
+/*juego*/
+
+body {
+    background-color: rgb(28, 119, 218);
+    color: white;
+}
+
+#main {
+    width: 60%;
+}
+
+.azul {
+    color: rgb(28, 119, 218);
+}
+
+.wrap-adivinaza2{
+    float:left;
+}
+
+.adivinaza {
+    width: 500px;
+    height: 300px;
+
+    line-height: 300px;
+    text-align: center;
+}
+
+.badge{
+    background: rgb(49,83,150);
+}
+
+.adivinaza p {
+    font-size: xx-large;
+}
+
+.wrap-controls {
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 3em;
+}
+
+.controls input {
+    width: 260px;
+    height: 35px;
+
+    color: black;
+    border-radius: 10px;
+}
+
+button {
+    height: 35px;
+
+    background-color: rgb(49,83,196);
+
+    padding: 0px 15px;
+    border-radius: 10px;
+}
+
+.wrap-respuestas {
+    width: 300px;
+}
+
+.wrap-respuestas h2 {
+    color: white;
+}
+
+.wrap-palabra {
+    float: left;
+}
+
+
+
+.palabra {
+    background-color: white;
+
+    font-weight: bold;
+    font-size: larger;
+
+    text-align: center;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.palabra-s {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.palabra-m {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.palabra-l {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.palabra:hover {
+    cursor: pointer;
+}
+
+.palabra-monedas-s {
+    bottom: 45px;
+    left: 15px;
+}
+
+.palabra-monedas-m {
+    bottom: 45px;
+    left: 50px;
+}
+
+.palabra-monedas-l {
+    bottom: 45px;
+    left: 65px;
+}
+
+.palabra-monedas {
+    height: 0;
+    color: black;
+    position: relative;
+    font-size: xx-small;
+}
+
+.wrap-pista {
+    color: black;
+}
+
+.pista {
+    min-height: 30px;
+}
+
+.pista div {
+    width: 29px;
+    display: inline-block;
+    background-color: white;
+    padding: 8px 0px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.pista-control {
+    width: 400px;
+}
+
+.pista-control button {
+    color: white;
+    background: orange;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#ayuda_enviar{
+    color: white;
+    background: rgb(49,83,196);
+   font-size: 1.4em;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+#popup-comprar {
+    width: 201px;
+    margin: 0 auto;
+}
+
+#popup-comprar-mensaje {
+    height: 100px;
+
+    vertical-align: middle;
+
+    background-color: white;
+
+    color: lightskyblue;
+    text-align: center;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#popup-comprar-confirmar {
+    background-color: lightskyblue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#popup-comprar-confirmar div {
+    width: 100px;
+
+    display: table-cell;
+
+    line-height: 70px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#popup-comprar-confirmar div:first-child {
+    border-right: solid rgb(49,83,196) 1px;
+}
+
+#popup-comprar-confirmar div:hover {
+    cursor: pointer;
+}
+
+#popup-comprar-confirmar div span {
+    font-size: xx-large;
+}
+
+
+.button_page {
+    margin: 0 auto;
+	width:12em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
