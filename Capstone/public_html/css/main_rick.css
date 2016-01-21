@@ -60,7 +60,36 @@ input {
     font-size: xx-large;
     vertical-align: middle;
 }
+#exampleInputEmail1{
+    color:black;
+    width: 20em;
+    margin-top: 2em;
+    margin-left: 15em;
+
+}
+
+.load_img{
+    margin-top: 3em;
+    margin-right: 28em;
+}
+.submit_button{
+
+    margin-top: 2em;
+    margin-left: 0.4em;   
+}
+.create_nivel{
+    margin-right: 31em;
+}
+
 
 #papa_usuario {
     padding-top: 10px;
 }
+
+.multiple-form-group{
+    width: 35em;
+    margin-top: 2em;
+    margin-left: 15em;
+}
+
+.badge{}

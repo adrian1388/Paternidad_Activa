@@ -133,6 +133,20 @@ h1{
   text-decoration:underline;
   color:#8C918F;
 }
+
+.link2{
+  text-decoration:none;
+  float:left;
+  color:#9D8E79;
+  display:block;
+  text-align:right;
+  font-size:12px;
+  margin-bottom:15px;
+}
+.link2:hover{
+  text-decoration:underline;
+  color:#8C918F;
+}
 .alert{
   display:none;
   font-size:12px;

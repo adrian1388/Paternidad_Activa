@@ -11,6 +11,7 @@
 var startButton = document.getElementById('startButton');
 var callButton = document.getElementById('callButton');
 var hangupButton = document.getElementById('hangupButton');
+var bandera=0;
 callButton.disabled = true;
 hangupButton.disabled = true;
 startButton.onclick = start;
@@ -84,6 +85,7 @@ function start() {
   
   if(startButton.disabled===false){
       startButton.disabled = true;
+      bandera=1;
       navigator.mediaDevices.getUserMedia({
         audio: true,
         video: true
@@ -94,8 +96,9 @@ function start() {
       });
   }
   
-  if(callButton.disabled===true && startButton.disabled===true ){
+  if(bandera===1){
       callButton.disabled = false;
+      bandera=0;
       navigator.mediaDevices.getUserMedia({
         audio: true,
         video: true

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="padres,hijos, ayuda">
+        <meta name="author" content="Sergio Moncayo">
+
+            <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script src="js/nivel1_3JS.js"></script>
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/main_rick.css">
+        <link rel="stylesheet" href="css/juego.css">
+
+    
+    </head>
+    <body>
+        <div>
+            <form role="form" method="post" enctype="multipart/form-data" id="js-upload-form">
+                    <div class="form-group">
+                    <input type="text" class="form-horizontal input-lg float-left" id="exampleInputEmail1" placeholder="Ingresar frase o acertijo (tema)"/>
+
+                    <button type="submit" class="btn-info btn-lg form-horizontal submit_button">
+                        <span class="glyphicon glyphicon-ok-sign float-left"></span>
+                    </button>
+                          <input type="file" name="files[]" class="load_img float-right" id="js-upload-files" >
+
+                    </div>
+                                
+            </form>
+            <form>
+                <div class="form-group multiple-form-group" data-max=10>
+
+                    <div class="form-group input-group grupo" id="grupo" >
+                            <input type="text" name="multiple[]" class="form-control" placeholder="Ingrese Palabra">
+                            <span class="input-group-btn "><button type="button" class="btn btn-default btn-add" >+
+                                    </button></span>
+                    </div>
+                    <h5 > M&aacute;ximo 10 palabras</h5>
+                </div>
+			
+            </form>
+            
+            <button type="submit" class="btn-info btn-lg form-horizontal float-right create_nivel">
+                        <span class="glyphicon glyphicon-ok-sign "></span> Crear Nivel
+            </button>
+            
+        </div>
+    </body>
+</html>

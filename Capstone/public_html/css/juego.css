@@ -12,12 +12,20 @@ body {
     color: rgb(28, 119, 218);
 }
 
+.wrap-adivinaza2{
+    float:left;
+}
+
 .adivinaza {
     width: 500px;
     height: 300px;
 
     line-height: 300px;
     text-align: center;
+}
+
+.badge{
+    background: rgb(49,83,150);
 }
 
 .adivinaza p {
@@ -35,6 +43,7 @@ body {
 
 .controls {
     width: 412px;
+    margin-bottom: 0.2em;
 }
 
 .controls input {
@@ -160,9 +169,17 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
 }
-
-
-
+#enviar{
+    padding-left: 0.8em !important;
+    padding-right: 0.8em !important;
+}
+#ayuda_enviar{
+    color: white;
+    background: rgb(49,83,196);
+   font-size: 1.4em;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
 
 
