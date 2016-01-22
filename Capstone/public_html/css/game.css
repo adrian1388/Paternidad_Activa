@@ -1,0 +1,179 @@
+
+input, button {
+    border: 0;
+}
+
+
+
+
+
+.center {
+    margin: 0 auto;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+
+    height: 700px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+#main {
+    width: 100%;
+
+    margin-top: 1%;
+}
+
+#niveles {
+    width: 15%;
+    background-color: rgb(17,123,209);
+
+    overflow-y: auto;
+}
+
+#juego {
+    width: 59%;
+
+    background-color: #2aabd2;
+}
+
+#papa {
+    width: 25%;
+
+    background-color: #3EAAD6;
+}
+
+.nivel {
+    background-color: rgb(183,238,255);
+    width: 50%;
+
+    text-align: center;
+    line-height: 50px;
+
+    border: solid rgb(34,164,243) 1px;
+    border-radius: 10px;
+    margin: 10px auto;
+
+    cursor: pointer;
+}
+
+.nivel-bloqueado {
+    background-color: lightslategray;
+
+    cursor: not-allowed;
+}
+
+.nivel:hover {
+}
+
+
+
+
+
+
+
+
+.wrap-controles {
+    margin-top: 20px;
+}
+
+.wrap-controles input {
+    text-align: center;
+}
+
+.controles {
+    width: 335px;
+}
+
+.controles input {
+    width: 260px;
+    height: 35px;
+
+    color: black;
+    border-radius: 10px;
+}
+
+.controles button {
+    height: 35px;
+
+    background-color: rgb(255,215,55);
+
+    padding: 0px 15px;
+    border-radius: 10px;
+}
+
+.controles #enviar {
+    color: rgb(110,78,0);
+    padding: 0px 25px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrap-respuestas {
+    width: 340px;
+}
+
+.wrap-palabra {
+    float: left;
+}
+
+.palabra {
+    width: 155px;
+    line-height: 110px;
+
+    background-color: white;
+
+    font-size: large;
+
+    text-align: center;
+
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.palabra:hover {
+    cursor: pointer;
+}
+
+.palabra-escondida {
+    background-color: lightgray;
+}
+
+.palabra-escondida:hover {
+    cursor: help;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
