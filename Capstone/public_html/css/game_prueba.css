@@ -1,0 +1,288 @@
+
+input, button {
+    border: 0;
+}
+
+body {
+    background-color: #3EAAD6;
+}
+
+
+
+.center {
+    margin: 0 auto;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+#main {
+    width: 100%;
+
+    margin-top: 1%;
+}
+
+#niveles {
+    width: 15%;
+    background-color: rgb(17,123,209);
+
+    overflow-y: auto;
+}
+
+#juego {
+    width: 59%;
+    background-color: rgb(157,219,234);
+}
+
+#papa {
+    width: 25%;
+    background-color: rgb(140,213,228);
+}
+
+.nivel {
+    background-color: rgb(183,238,255);
+    width: 50%;
+    text-align: center;
+    line-height: 50px;
+    border: solid rgb(218, 59, 59) 4px;
+    border-radius: 22px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.nivel-bloqueado {
+    background-color: lightslategray;
+
+    cursor: not-allowed;
+}
+
+.nivel:hover {
+}
+
+
+
+
+
+
+
+
+.wrap-controles {
+    margin-top: 20px;
+}
+
+.wrap-controles input {
+    text-align: center;
+}
+
+.controles {
+    width: 339px;
+}
+
+.controles input {
+    width: 260px;
+    height: 35px;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid rgba(159, 121, 121, 0.87);
+}
+
+.controles button {
+    height: 35px;
+
+    background-color: rgb(255,215,55);
+
+    padding: 0px 15px;
+    border-radius: 10px;
+}
+
+.controles #enviar {
+    padding: 0px 25px;
+    border-radius: 10px;
+    border: 4px solid rgba(187,30,30,0.87);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrap-respuestas {
+    width: 260px;
+}
+
+.wrap-palabra {
+    float: left;
+}
+
+.palabra {
+    width: 119px;
+    line-height: 83px;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid rgba(159, 121, 121, 0.87);
+    margin: 5px;
+}
+
+.palabra:hover {
+    cursor: pointer;
+}
+
+.palabra-escondida {
+    background-color: lightgray;
+}
+
+.palabra-escondida:hover {
+    cursor: help;
+}
+
+
+
+
+
+
+
+
+
+
+.pista {
+    width: 130px;
+    margin: 0 auto;
+}
+
+
+.pista button {
+    height: 35px;
+    width: 130px;
+    background-color: #FFD737;
+    padding: 0px 15px;
+    border-radius: 10px;   
+    color: #6E4E00;
+    border: 4px solid rgba(187,30,30,0.87);
+    margin-top: 20px;
+}
+
+button:hover {
+    color: #9F0000;
+}
+
+/* Grow */
+.hvr-grow {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+@keyframes hvr-ripple-out {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+
+.hvr-ripple-out {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+.hvr-ripple-out:before {
+  content: '';
+  position: absolute;
+    border: rgb(255, 215, 55) solid 4px;
+    border-radius: 10px;  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+  -webkit-animation-name: hvr-ripple-out;
+  animation-name: hvr-ripple-out;
+}
+
+/* Bubble Float Right */
+.hvr-bubble-float-right {  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-bubble-float-right:before {
+  position: absolute;
+  z-index: -1;
+  top: calc(50% - 10px);
+  right: 0;
+  content: '';
+  border-style: solid;
+  border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #DA3B3B;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-bubble-float-right:hover, .hvr-bubble-float-right:focus, .hvr-bubble-float-right:active {
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+.hvr-bubble-float-right:hover:before, .hvr-bubble-float-right:focus:before, .hvr-bubble-float-right:active:before {
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+}
