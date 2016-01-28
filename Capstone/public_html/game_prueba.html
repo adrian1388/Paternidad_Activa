@@ -4,38 +4,30 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="Richard Jara">
 
     <title>Ratsel</title>
-
-    <link rel="stylesheet" href="css/libs/normalize_v3.0.3.css">
-    <link rel="stylesheet" href="css/game_prueba.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+    <script src="game_prueba.json.js"></script>
+    <script type="text/javascript" src="js/game_prueba.js"></script>
+
+
+    <link rel="stylesheet" href="css/libs/normalize_v3.0.3.css">
+
+    <link rel="stylesheet" href="css/game_prueba.css">
+
 </head>
-<body>
+<body onLoad="onLoadEvent();">
     <div id="main" class="center">
         <div id="niveles" class="inline">
             <div class="wrap-niveles">
-                <div class="nivel hvr-grow hvr-bubble-float-right">Nivel 1</div>
-                <div class="nivel hvr-grow">Nivel 2</div>
-                <div class="nivel hvr-grow">Nivel 3</div>
-                <div class="nivel hvr-grow">Nivel 4</div>
-                <div class="nivel hvr-grow">Nivel 5</div>
-                <div class="nivel nivel-bloqueado">Nivel 6</div>
-                <div class="nivel nivel-bloqueado">Nivel 7</div>
-                <div class="nivel nivel-bloqueado">Nivel 8</div>
-                <div class="nivel nivel-bloqueado">Nivel 9</div>
-                <div class="nivel nivel-bloqueado">Nivel 10</div>
-                <div class="nivel nivel-bloqueado">Nivel 11</div>
-                <div class="nivel nivel-bloqueado">Nivel 12</div>
-                <div class="nivel nivel-bloqueado">Nivel 13</div>
-                <div class="nivel nivel-bloqueado">Nivel 14</div>
-                <div class="nivel nivel-bloqueado">Nivel 15</div>
+                <div id="tema1" class="nivel hvr-grow hvr-bubble-float-right" onclick="escogerTema(0)">Tema 1</div>
+                <div id="tema2" class="nivel hvr-grow" onclick="escogerTema(1)">Tema 2</div>
+                <div id="tema3" class="nivel hvr-grow" onclick="escogerTema(2)">Tema 3</div>
             </div>
         </div>
         <div id="juego" class="inline">
@@ -47,13 +39,13 @@
 
             <div id="tablero">
                 <div class="wrap-adivinanza inline">
-                    <div style="border: solid #DA3B3B 10px;margin-left: 10px;margin-top: 70px;">
-                        <img src="img/zoo.png" alt="Zoológico" width="500">
+                    <div class="imagen_tema">
+                        <img src="img/zoo.png" alt="Zoológico" width="500" height="354">
                     </div>
                     <div class="wrap-controles">
                         <div class="controles center">
-                            <input type="text" name="adivinanza" placeholder="Intenta con una palabra">
-                            <button id="enviar" class="center hvr-grow ">
+                            <input id="inputString" type="text" name="adivinanza" placeholder="Intenta con una palabra" onkeypress="return validateEnter(event)"/>
+                            <button type="submit" id="enviar" class="center hvr-grow " onclick="validateInput()">
                                 <span class="glyphicon glyphicon-ok"></span>
                             </button>
                         </div>
@@ -64,46 +56,43 @@
 
                     <div class="respuestas">
                         <div class="wrap-palabra hvr-grow">
-                            <div class="palabra">
-                                <span>Elefante</span>
-                                <span class="glyphicon glyphicon-ok"></span>
-                            </div>
-                        </div>
-                        <div class="wrap-palabra hvr-grow">
-                            <div class="palabra">
-                                <span>Jirafa</span>
-                                <span class="glyphicon glyphicon-ok"></span>
-                            </div>
-                        </div>
-                        <div class="wrap-palabra hvr-grow">
-                            <div class="palabra">
-                                <span>Hipopotamo</span>
-                                <span class="glyphicon glyphicon-ok"></span>
+                            <div class="palabra palabra-escondida">
+                                <span id="palabra1" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                         </div>
                         <div class="wrap-palabra hvr-grow">
                             <div class="palabra palabra-escondida">
-                                <span class="glyphicon glyphicon-question-sign"></span>
+                                <span id="palabra2" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                         </div>
                         <div class="wrap-palabra hvr-grow">
                             <div class="palabra palabra-escondida">
-                                <span class="glyphicon glyphicon-question-sign"></span>
+                                <span id="palabra3" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                         </div>
                         <div class="wrap-palabra hvr-grow">
                             <div class="palabra palabra-escondida">
-                                <span class="glyphicon glyphicon-question-sign"></span>
+                                <span id="palabra4" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                         </div>
                         <div class="wrap-palabra hvr-grow">
                             <div class="palabra palabra-escondida">
-                                <span class="glyphicon glyphicon-question-sign"></span>
+                                <span id="palabra5" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                         </div>
                         <div class="wrap-palabra hvr-grow">
                             <div class="palabra palabra-escondida">
-                                <span class="glyphicon glyphicon-question-sign"></span>
+                                <span id="palabra6" class="glyphicon glyphicon-question-sign"></span>
+                            </div>
+                        </div>
+                        <div class="wrap-palabra hvr-grow">
+                            <div class="palabra palabra-escondida">
+                                <span id="palabra7" class="glyphicon glyphicon-question-sign"></span>
+                            </div>
+                        </div>
+                        <div class="wrap-palabra hvr-grow">
+                            <div class="palabra palabra-escondida">
+                                <span id="palabra8" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                         </div>
                     </div>
@@ -111,7 +100,7 @@
 					<div class="pista ">
 						<button id="pista" class="center hvr-grow hvr-ripple-out">
 							Pista
-							<span class="glyphicon glyphicon-ok"></span>
+							<span class="glyphicon glyphicon-question-sign"></span>
 						</button>
 					</div>
                 </div>
@@ -125,10 +114,11 @@
                 <h1 class="align-center">Papá</h1>
 
 
-
             </div>
             <div>
-                <h2 class="align-center">Chat</h2>
+                <div class="center connection">
+                    <img src="img/user_accept.png" alt="connected" width="100"/>
+                </div>
             </div>
             <div>
                 <div>

@@ -1,5 +1,5 @@
 
-input, button {
+button {
     border: 0;
 }
 
@@ -16,7 +16,7 @@ body {
 .inline {
     display: inline-block;
     vertical-align: top;
-    height: 600px;
+    height: 630px;
     border-radius: 15px;
 }
 
@@ -83,7 +83,7 @@ body {
 }
 
 .controles {
-    width: 339px;
+    width: 350px;
 }
 
 .controles input {
@@ -148,7 +148,8 @@ body {
 }
 
 .palabra-escondida {
-    background-color: lightgray;
+    background-color: rgba(81, 197, 255, 0.52);
+    /*background-color: rgba(193, 194, 222, 0.62);*/
 }
 
 .palabra-escondida:hover {
@@ -162,7 +163,12 @@ body {
 
 
 
-
+.imagen_tema {
+    border: 10px solid #DA3B3B;
+    margin-left: 10px;
+    margin-top: 70px;
+    border-radius: 5px;
+}
 
 .pista {
     width: 130px;
@@ -175,14 +181,68 @@ body {
     width: 130px;
     background-color: #FFD737;
     padding: 0px 15px;
-    border-radius: 10px;   
-    color: #6E4E00;
+    border-radius: 10px;
     border: 4px solid rgba(187,30,30,0.87);
     margin-top: 20px;
 }
 
 button:hover {
-    color: #9F0000;
+    color: #001f9c;
+}
+
+.connection {
+    width: 100px;
+}
+
+input:focus {
+    border: 4px solid rgba(187,30,30,0.87);
+    color: #001f9c;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    -webkit-animation-name: alineaIzq;
+    -webkit-animation-duration: 0.2s;
+    -moz-animation-name: alineaIzq;
+    -moz-animation-duration: 0.2s;
+}
+@keyframes alineaIzq{
+    from {
+        font-size: 14px;
+    }
+    to {
+        font-size: 16px;
+    }
+}@-moz-keyframes alineaIzq{
+    from {
+        font-size: 14px;
+    }
+    to {
+        font-size: 16px;
+    }
+}
+
+
+.controles input.horizTranslate {
+    -webkit-animation-name: trasladar;
+    -webkit-animation-duration: 0.25s;
+    -moz-animation-name: trasladar;
+    -moz-animation-duration: 0.25s;
+
+}
+@-webkit-keyframes trasladar{
+    from {
+        margin-left: 5px;
+    }
+    to {
+        margin-left: -5px;
+    }
+}
+@-moz-keyframes trasladar{
+    from {
+        margin-left: 5px;
+    }
+    to {
+        margin-left: -5px;
+    }
 }
 
 /* Grow */
@@ -199,8 +259,8 @@ button:hover {
   transition-property: transform;
 }
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 
@@ -268,7 +328,7 @@ button:hover {
   position: absolute;
   z-index: -1;
   top: calc(50% - 10px);
-  right: 0;
+  right: -20px;
   content: '';
   border-style: solid;
   border-width: 10px 0 10px 10px;
@@ -279,8 +339,8 @@ button:hover {
   transition-property: transform;
 }
 .hvr-bubble-float-right:hover, .hvr-bubble-float-right:focus, .hvr-bubble-float-right:active {
-  -webkit-transform: translateX(-10px);
-  transform: translateX(-10px);
+  -webkit-transform: translateX(-15px);
+  transform: translateX(-15px);
 }
 .hvr-bubble-float-right:hover:before, .hvr-bubble-float-right:focus:before, .hvr-bubble-float-right:active:before {
   -webkit-transform: translateX(10px);
