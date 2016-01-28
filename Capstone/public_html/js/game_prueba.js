@@ -58,6 +58,7 @@ function escogerTema(tema){
     llenarImagenDiv(tema);
     llenarRespuestasArray(tema);
     llenarRespuestasDiv(tema);
+    llenarPistasDiv(1);
 }
 
 function llenarImagenDiv(tema){
@@ -94,6 +95,21 @@ function llenarRespuestasDiv(tema){
 
 	}
 }
+function pistasAleatorioGeneral(){
+	var randomNum = Math.floor(Math.random()*8 + 0);
+	llenarPistasDiv(randomNum);
+}
+
+function llenarPistasDiv(palabra_i){
+	var nodePista = document.getElementById("parrafoPista");
+	var nodeTema = document.getElementsByClassName("hvr-bubble-float-right");
+	var randomNum = Math.floor(Math.random()*2 + 0);
+	
+    tema = nodeTema[0].id
+    tema = tema.substring(tema.length-1,tema.length);
+	nodePista.innerHTML = jsonData.App[tema - 1].respuestas[palabra_i - 1].ayuda[randomNum].pista;
+}
+
 function validateEnter(e) {
     if (event.which == 13 || event.keyCode == 13) {
         validateInput();
@@ -116,16 +132,16 @@ function validateInput(){
 	        audioExito.autoplay = true;
 
 	    	var nodeSpan = document.getElementById("palabra" + (i+1)); //nodo que contiene el glyphicon question
-	    	var parent = nodeSpan.parentNode; //nodo que contiene el estado de bloqueado
+	    	var parent = nodeSpan.parentNode.parentNode.parentNode; //nodo que contiene el estado de bloqueado
 
-	    	parent.className = "palabra";
-	    	parent.innerHTML = "<span id='palabra" + (i+1) +"'>" + inputString + "</span>"; //agrego la palabra al nodo span
+	    	//parent.className = "palabra";
+	    	parent.innerHTML = "<div class='palabra'><span id='palabra" + (i+1) +"'>" + inputString + "</span><span class='glyphicon glyphicon-ok'></span></div>"; //agrego la palabra al nodo span
 	    	// parent.outerHTML = "<div class='palabra'></div"; //cambia el estado a desbloqueado
 	    	// nodeSpan.outerHTML = "<span id='palabra" + i + 1 +"'>" + inputString + "</span>"; //agrego la palabra al nodo span
-	    	var node = document.createElement("span");
-	        node.className = "glyphicon glyphicon-ok"; //nodo que contiene el glyphicon ok
+	    	//var node = document.createElement("span");
+	        //node.className = "glyphicon glyphicon-ok"; //nodo que contiene el glyphicon ok
 	    	//parent.appendChild(nodeSpan);
-	    	parent.appendChild(node);
+	    	//parent.appendChild(node);
 
 	    }
 

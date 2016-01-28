@@ -63,7 +63,7 @@ var jsonData = {
 										]
 		},
 		{ "palabra": "arbol", "ayuda": [
-											{ "pista": "Tiene tronco,ramas y hojas." },
+											{ "pista": "Tiene tronco, ramas y hojas." },
 											{ "pista": "." }
 										]
 		},

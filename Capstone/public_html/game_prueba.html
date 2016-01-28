@@ -37,6 +37,10 @@
                 <button>Regresar</button>
             </div>
 
+            <div id="titulo">
+                <h1 style="text-align: center">Adivina las palabras que tienen alguna relaci&oacute;n con la imagen.</h1>
+            </div>
+
             <div id="tablero">
                 <div class="wrap-adivinanza inline">
                     <div class="imagen_tema">
@@ -52,56 +56,73 @@
                     </div>
                 </div>
                 <div class="wrap-respuestas inline">
-                    <h3 class="align-center">RESPUESTAS</h3>
 
                     <div class="respuestas">
                         <div class="wrap-palabra hvr-grow">
+                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(1);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra1" class="glyphicon glyphicon-question-sign"></span>
                             </div>
+                            </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
+                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(2);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra2" class="glyphicon glyphicon-question-sign"></span>
                             </div>
+                            </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
+                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(3);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra3" class="glyphicon glyphicon-question-sign"></span>
                             </div>
+                            </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
+                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(4);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra4" class="glyphicon glyphicon-question-sign"></span>
                             </div>
+                            </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
+                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(5);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra5" class="glyphicon glyphicon-question-sign"></span>
                             </div>
+                            </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
+                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(6);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra6" class="glyphicon glyphicon-question-sign"></span>
                             </div>
+                            </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
+                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(7);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra7" class="glyphicon glyphicon-question-sign"></span>
                             </div>
+                            </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
+                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(8);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra8" class="glyphicon glyphicon-question-sign"></span>
                             </div>
+                            </a>
                         </div>
                     </div>
 					
 					<div class="pista ">
+                        <a href = "javascript:void(0)" onclick = "pistasAleatorioGeneral();document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
 						<button id="pista" class="center hvr-grow hvr-ripple-out">
 							Pista
 							<span class="glyphicon glyphicon-question-sign"></span>
 						</button>
+                        </a>
 					</div>
                 </div>
             </div>
@@ -128,6 +149,11 @@
                 <div>
                     <button>Preguntar a papá</button>
                 </div>
+            </div>
+
+            <div id="popupDiv">
+                <div id="light" class="white_content"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="close">X</a><p id="parrafoPista"></p></div>
+                <div id="fade" class="black_overlay"></div>
             </div>
 
         </div>
