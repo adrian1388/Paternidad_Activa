@@ -116,14 +116,14 @@
                         </div>
                     </div>
 					
-					<div class="pista ">
-                        <a href = "javascript:void(0)" onclick = "pistasAleatorioGeneral();document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
-						<button id="pista" class="center hvr-grow hvr-ripple-out">
-							Pista
-							<span class="glyphicon glyphicon-question-sign"></span>
-						</button>
-                        </a>
-					</div>
+                                    <div class="pista ">
+                                        <a href = "javascript:void(0)" onclick = "pistasAleatorioGeneral();document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+                                                                <button id="pista" class="center hvr-grow hvr-ripple-out">
+                                                                        Pista
+                                                                        <span class="glyphicon glyphicon-question-sign"></span>
+                                                                </button>
+                                        </a>
+                                    </div>
                 </div>
             </div>
 
@@ -143,7 +143,7 @@
             </div>
             <div>
                 <div>
-                    <button>Jugar con papá</button>
+                    <button onclick="setTurno();document.getElementById('light2').style.display='block';document.getElementById('fade2').style.display='block'" >Jugar con papá</button>
                 </div>
                 <br>
                 <div>
@@ -154,6 +154,10 @@
             <div id="popupDiv">
                 <div id="light" class="white_content"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="close">X</a><p id="parrafoPista"></p></div>
                 <div id="fade" class="black_overlay"></div>
+            </div>
+             <div id="popupDiv2">
+                <div id="light2" class="white_content"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade2').style.display='none'" class="close">X</a><p id="Turno_Set"></p></div>
+                <div id="fade2" class="black_overlay"></div>
             </div>
 
         </div>

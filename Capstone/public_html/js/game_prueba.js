@@ -3,6 +3,8 @@
 
 
 
+/* global jsonData */
+
 /**+++++++++++ Notificaciones en pantalla ++++++++++**/
 /**+++++++++++____________________________++++++++++**/
 
@@ -40,6 +42,8 @@ var tema;
 var palabraIN;
 var respuestasDefault = new Array();
 var respuestasErroneas = new Array();
+var turno=0;
+var control=0;
 //var newArr = JSON.parse(jsonData);
 
 function onLoadEvent() {
@@ -48,7 +52,23 @@ function onLoadEvent() {
     escogerTema(0);
 }
 
+function setTurno(){
+    turno=((Math.random()*10)%1 + 1).toFixed(0);
+    control=1;
+    if(turno==1){
+        document.getElementById('Turno_Set').innerHTML="Turno de Hijo";
+        control=1;
+
+    }
+    if(turno==2){
+        document.getElementById('Turno_Set').innerHTML="Turno de Padre"; 
+        control2=1;
+    }
+    
+}
+
 function escogerTema(tema){
+    control=0;
     for (var i = 0; i < 3; i++ ){
         var node = document.getElementById('tema' + (i + 1));
         if (node.classList.contains('hvr-bubble-float-right')){
@@ -105,7 +125,7 @@ function llenarPistasDiv(palabra_i){
 	var nodeTema = document.getElementsByClassName("hvr-bubble-float-right");
 	var randomNum = Math.floor(Math.random()*2 + 0);
 	
-    tema = nodeTema[0].id
+    tema = nodeTema[0].id;
     tema = tema.substring(tema.length-1,tema.length);
 	nodePista.innerHTML = jsonData.App[tema - 1].respuestas[palabra_i - 1].ayuda[randomNum].pista;
 }
@@ -119,12 +139,19 @@ function validateEnter(e) {
 }
 function validateInput(){
 	var palabraFound = false;
+        var tempo=0;
 	var inputString = document.getElementById("inputString").value;
+        document.getElementById('light2').style.display='none';
+        document.getElementById('fade2').style.display='none';
+        clearTimeout();
+        if(turno!==0){
+            tempo=turno;
+        }
 
 	for (var i = 0; i < respuestasDefault.length && !palabraFound; i++) {
 	    
 	    if (inputString.toLowerCase() == respuestasDefault[i].toLowerCase()) {
-
+       
 	    	palabraFound = true; //bandera
 
 	        var audioExito = new Audio();
@@ -147,17 +174,32 @@ function validateInput(){
 
 	}
 	if (!palabraFound){
-        
-        var audioExito = new Audio();
-	    audioExito.src = "sounds/wrong1.mp3";
-	    audioExito.autoplay = true;
+            if(control==1){
+                if(turno==1){    
+                    document.getElementById('Turno_Set').innerHTML="Turno de Padre";
+                    turno=2;
+                }else if(turno==2){
+                    document.getElementById('Turno_Set').innerHTML="Turno de Hijo";
+                    turno=1;
+                }
+                document.getElementById('light2').style.display='block';
+                document.getElementById('fade2').style.display='block';
+            }
+            
+            var audioExito = new Audio();
+                audioExito.src = "sounds/wrong1.mp3";
+                audioExito.autoplay = true;
 
-        var boxOne = document.getElementById('inputString');
-		//alert("¡Esa palabra no es! " + inputString);
-		notifyMe(inputString);
-        animationErr(boxOne);
-		respuestasErroneas.push("" + inputString);
+            var boxOne = document.getElementById('inputString');
+                    //alert("¡Esa palabra no es! " + inputString);
+                    notifyMe(inputString);
+            animationErr(boxOne);
+                    respuestasErroneas.push("" + inputString);
 	}
+        
+    
+    
+        
 	document.getElementById("inputString").value = "";
 	
     
