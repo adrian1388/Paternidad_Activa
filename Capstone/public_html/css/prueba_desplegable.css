@@ -1,0 +1,312 @@
+    /*  
+        Document    :   main.css 
+        Author      :   adrian mato 
+        Description :   Estilo general 
+    */  
+      /*
+    @CHARSET "UTF-8";  
+      */
+    /* 
+        Section    :    CSS RESET 
+        Description:    Reseteamos practicamente todos los valores de los selectores para facilitar el cross-browsing 
+    */  
+  /*  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,  
+    font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,  
+    tfoot, thead, tr, th, td, button{  
+        border:0pt none;  
+        font-family: inherit;  
+        font-size: 100%;  
+        font-style: inherit;  
+        font-weight: inherit;  
+        margin: 0pt;  
+        padding: 0pt;  
+        vertical-align: baselinebaseline;  
+    }  */
+
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+  background: url('../img/fondoPaper3.png') #3EAAD6;
+  background-size: 100%;
+  font-family: 'Bree Serif', serif;
+        width: 800px;
+        line-height: auto;    
+        font-family: Helvetica, Arial, sans-serif;  
+        margin: 0 auto;
+        cursor: default;  
+        color: #000;  
+}
+    /* 
+        Section:        LATERAL 
+        Description:    Panel lateral donde mostramos las distintas fuentes RSS 
+    */  
+    #lateral{
+        width: 600px;  
+        height: 100%;  
+        float: left;  
+    }  
+    
+    .lateralDer {
+        width: 600px;
+        height: 100%;
+        float: left;  
+    }
+      
+
+      
+    /* 
+        Section:        TOGGLER 
+        Description:    Boton que permitirá mostrar / ocultar el panel 
+    */  
+    #toggler{  
+        width: 100px;
+        border-left: 1px solid #c2cff1;  
+        float: left;
+        text-align: center;
+        line-height: 70px;
+
+        background-color: #FBE691;
+
+        padding: 0px 15px;
+        margin: 100px 0;
+        border-radius: 10px;
+        border: 2px solid #32774E;
+        background: transparent linear-gradient(rgb(117, 208, 245), #449280) repeat scroll 0% 0%;
+        margin-left: 10px;
+    }  
+    #save{  
+        width: 100px;
+        border-left: 1px solid #c2cff1;  
+        float: left;
+        text-align: center;
+        line-height: 70px;
+
+        background-color: #FBE691;
+
+        padding: 0px 15px;
+        margin:  0 auto;
+        border-radius: 10px;
+        border: 2px solid #32774E;
+        background: transparent linear-gradient(rgb(117, 208, 245), #449280) repeat scroll 0% 0%;
+        margin-left: 10px;
+    } 
+
+    #toggler:hover{  
+        cursor: pointer;  
+    }  
+    #toggler.off{  
+        margin-left: 0;  
+    }  
+    #toggler.off:hover{  
+        margin-left: 0;  
+    }  
+
+/* Grow */
+.hvr-grow {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+
+/***************************************************************************************/
+
+
+
+
+
+
+
+.dos {
+  border-left: 2px solid #15B0A6;
+}
+.title {
+  text-align: center;
+  border-bottom: 2px solid #15B0A6;
+  text-shadow: 1px 1px #15B0A6;
+}
+.boton_crear {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 2px;
+  border-top: 2px solid #15B0A6;
+  font-family: 'Bree Serif', serif;
+}
+
+.register select {
+  width: 65.4%;
+  padding: 5px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  background: rgba(28,181,232,0.07);
+}
+.select {
+  font: #bbb;
+  color: #bbb;
+}
+.register option {
+  background: #FFFFFF;
+}
+.main {
+  margin: 0 auto;
+  width: 1045px;
+}
+.formulario {
+  display: flex;
+}
+.main > div {
+  margin-top: 10px;
+}
+
+.two .register {
+  border: none;
+}
+.two .register h3 {
+  border-bottom-color: #909090;
+}
+.two .register .sep {
+  border-color: #909090;
+}
+
+.register {
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  color: #444;
+  background-color: #F0F0F0;
+}
+.register h3 {
+  margin: 0 15px 20px;
+  border-bottom: 2px solid #15B0A6;
+  padding: 5px 10px 5px 0;
+  font-size: 1.1em;
+}
+.register div {
+  margin: 10px 0 10px 0;
+  border: none;
+}
+.register label {
+  display: inline-block;
+  width: 32%;
+  text-align: right;
+  font-size: 0.9em;
+  /*margin: 10px;*/
+}
+.register input[type=text], .register input[type=password] {
+  width: 63%;
+  /*font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;*/
+  padding: 5px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  background: rgba(28,181,232,0.07);
+}
+.register input[type=text]:focus, .register input[type=password]:focus {
+  background: #FFFFFF;
+}
+.button {
+  font-size: 1em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #15B0A6;
+  box-shadow: 0 1px 0 0 #15B0A6 inset;
+  background: #15B0A6;
+  background: -webkit-linear-gradient(#15B0A6, #449280);
+  background: -moz-linear-gradient(#15B0A6, #449280);
+  background: -o-linear-gradient(#15B0A6, #449280);
+  background: linear-gradient(#15b0a6, #449280);
+}
+.button:hover {
+  color: #000;
+  background: #ACE9E5;
+  background: -webkit-linear-gradient(#ACE9E5, #15B0A6);
+  background: -moz-linear-gradient(#ACE9E5, #15B0A6);
+  background: -o-linear-gradient(#ACE9E5, #15B0A6);
+  background: linear-gradient(#ace9e5, #15b0a6);
+}
+.register .sep {
+  border: 1px solid #15B0A6;
+  position: relative;
+  margin: 35px 20px;
+}
+.register .ord {
+  position: absolute;
+    width: 130px;
+    left: 41%;
+  background: #F0F0F0;
+  text-align: center;
+  margin: -10px 0 0 -25px;
+  line-height: 20px;
+}
+.register .connect {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.register .social-buttons {
+  display: inline-block;
+  min-width: 150px;
+  height: 40px;
+  margin: 0 5px 10px;
+  border-radius: 10px;
+  text-shadow: 1px 1px 5px #000000;
+}
+.register .social-buttons a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0 15px;
+}
+.register .social-buttons span {
+  font-size: 25px;
+  margin-left: 35px;
+}
+.register .facebook {
+  background: #415EA3;
+  background: -webkit-linear-gradient(#415EA3, #2E4A88);
+  background: -moz-linear-gradient(#415EA3, #2E4A88);
+  background: -o-linear-gradient(#415EA3, #2E4A88);
+  background: linear-gradient(#415ea3, #2e4a88);
+}
+.register .facebook:hover {
+  background: #3B5591;
+  background: -webkit-linear-gradient(#3B5591, #2A437C);
+  background: -moz-linear-gradient(#3B5591, #2A437C);
+  background: -o-linear-gradient(#3B5591, #2A437C);
+  background: linear-gradient(#3b5591, #2a437c);
+}
+.register .facebook a {
+  background: url(../images/logo_fb_31x42.png) no-repeat 5% 10%;
+}
+.register .twitter {
+  background: #41C0F3;
+  background: -webkit-linear-gradient(#41C0F3, #3FBAEC);
+  background: -moz-linear-gradient(#41C0F3, #3FBAEC);
+  background: -o-linear-gradient(#41C0F3, #3FBAEC);
+  background: linear-gradient(#41c0f3, #3fbaec);
+}
+.register .twitter:hover {
+  background: #3EB1DF;
+  background: -webkit-linear-gradient(#3EB1DF, #3EAAD6);
+  background: -moz-linear-gradient(#3EB1DF, #3EAAD6);
+  background: -o-linear-gradient(#3EB1DF, #3EAAD6);
+  background: linear-gradient(#3eb1df, #3eaad6);
+}
+.register .twitter a {
+  background: url(../images/logo_twitter_38x32.png) no-repeat 6% 25%;
+}

@@ -1,0 +1,103 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">   
+    <html>  
+        <head>  
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+            <title>Panel lateral desplegable</title>  
+            <link rel="stylesheet" href="css/prueba_desplegable.css" type="text/css" />  
+        </head>  
+        <body>
+
+                <div class="title">
+                  <h1>Registro de Jugadores</h1>
+                </div>
+ 
+              
+            <div id="lateral">  
+                <div class="one">
+                    <div class="register">
+
+                      <h3>Información de papá</h3>
+                      <form id="reg-form">
+                        <div>
+                          <label for="name">Nombre</label>
+                          <input id="name" spellcheck="false" placeholder="Juan José Arnulfio" type="text">
+                        </div>
+                        <div>
+                          <label for="email">Email *</label>
+                          <input id="email" spellcheck="false" placeholder="juan.arnulfio@xyz.com" type="text">
+                        </div>
+                        <div>
+                          <label for="sexo">Sexo</label>
+                          <select class="form-control" id="sexoPadre">
+                            <option value="0">Hombre</option>
+                            <option value="1">Mujer</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label for="username">Usuario *</label>
+                          <input id="username" spellcheck="false" placeholder="juanarn7" type="text">
+                        </div>
+                        <div>
+                          <label for="password">Contraseña *</label>
+                          <input id="password" type="password">
+                        </div>
+                        <div>
+                          <label for="password-again">Confirmar Contraseña *</label>
+                          <input id="password-again" type="password">
+                        </div>
+                      </form>
+
+                    </div>
+                </div>
+            </div>  
+              <div id="butToggler">
+                <a class="hvr-grow" style="height: 70px;" id="toggler">Continuar</a>
+              </div>
+
+            <div id="lateralDer" style="display: none;">
+                 
+                <div class="two">
+                    <div class="register">
+                      <h3>Información de hijo</h3>
+                      <form id="reg-form">
+                        <div>
+                          <label for="name">Nombre</label>
+                          <input id="name" spellcheck="false" placeholder="Pepe Arnulfio Soler" type="text">
+                        </div>
+                        <div>
+                          <label for="email">Email *</label>
+                          <input id="email" spellcheck="false" placeholder="pepito@xyz.com" type="text">
+                        </div>
+                        <div>
+                          <label for="sexo">Sexo</label>
+                          <select class="form-control" id="sexoHijo">
+                            <option value="0">Hombre</option>
+                            <option value="1">Mujer</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label for="username">Usuario *</label>
+                          <input id="username" spellcheck="false" placeholder="pepito55" type="text">
+                        </div>
+                        <div>
+                          <label for="password">Contraseña *</label>
+                          <input id="password" type="password">
+                        </div>
+                        <div>
+                          <label for="password-again">Confirmar Contraseña *</label>
+                          <input id="password-again" type="password">
+                        </div>
+                      </form>
+                      
+                    </div>
+                </div>
+            </div>
+            <div id="butToggler">
+                <a class="hvr-grow" style="height:70px; display: none;" id="save">Guardar</a>
+            </div>
+
+            <!-- scripts -->  
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>   
+            <script type="text/javascript" src="js/prueba_desplegable.js"></script>   
+        </body>  
+    </html>  
