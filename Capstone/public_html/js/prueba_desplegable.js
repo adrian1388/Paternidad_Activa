@@ -22,7 +22,8 @@ $(document).ready(function(){
     /* 
      * AL CARGAR EL DOCUMENTO 
     */  
-    calculateDimensions();  
+    calculateDimensions();
+    saveBtn.hide();
       
       
     /* 
@@ -38,12 +39,6 @@ $(document).ready(function(){
     */  
     toggler.click(clickToggler);  
       
-      
-    /* 
-     * AL SELECCIONAR UNO DE LOS ITEMS DEL LISTADO LATERAL 
-    */     
-    $("#lateral a").click(loadItem);  
-  
   
     /* 
      * FUNCIONES DE CONTROL DE ELEMENTOS DE INTERFAZ 

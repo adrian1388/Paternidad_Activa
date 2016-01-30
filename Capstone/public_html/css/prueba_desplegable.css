@@ -44,13 +44,13 @@ body {
     #lateral{
         width: 600px;  
         height: 100%;  
-        float: left;  
+        margin: 0 auto;
     }  
     
     .lateralDer {
         width: 600px;
         height: 100%;
-        float: left;  
+        margin: 0 auto;
     }
       
 
@@ -59,6 +59,11 @@ body {
         Section:        TOGGLER 
         Description:    Boton que permitirá mostrar / ocultar el panel 
     */  
+    #butToggler {
+        margin: 0px auto;
+        width: 150px;
+    }
+
     #toggler{  
         width: 100px;
         border-left: 1px solid #c2cff1;  
@@ -69,11 +74,10 @@ body {
         background-color: #FBE691;
 
         padding: 0px 15px;
-        margin: 100px 0;
+        
         border-radius: 10px;
         border: 2px solid #32774E;
         background: transparent linear-gradient(rgb(117, 208, 245), #449280) repeat scroll 0% 0%;
-        margin-left: 10px;
     }  
     #save{  
         width: 100px;
@@ -85,11 +89,10 @@ body {
         background-color: #FBE691;
 
         padding: 0px 15px;
-        margin:  0 auto;
+
         border-radius: 10px;
         border: 2px solid #32774E;
         background: transparent linear-gradient(rgb(117, 208, 245), #449280) repeat scroll 0% 0%;
-        margin-left: 10px;
     } 
 
     #toggler:hover{  

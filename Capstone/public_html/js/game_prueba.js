@@ -49,6 +49,7 @@ var control=0;
 function onLoadEvent() {
 	respuestasDefault.length = 0;
 	respuestasErroneas.length = 0;
+    llenarNiveles();
     escogerTema(0);
 }
 
@@ -67,6 +68,13 @@ function setTurno(){
     
 }
 
+function llenarNiveles() {
+    for (var i = 0; i < 3; i++) {
+        var nodeNivel = document.getElementById("tema" + (i + 1));
+        nodeNivel.innerText = "" + jsonData.App[i].imagen.alt + "";
+    }
+    
+}
 function escogerTema(tema){
     control=0;
     for (var i = 0; i < 3; i++ ){
