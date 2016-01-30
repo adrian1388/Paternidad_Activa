@@ -58,8 +58,8 @@ var jsonData = {
 										]
 		},
 		{ "palabra": "pañuelo", "ayuda": [
-											{ "pista": "Te uedes secar con este trapo." },
-											{ "pista": "Se lo usa para el aseo personal." }
+											{ "pista": "Puedes secar tu sudor con este trapo." },
+											{ "pista": "Es un trapo que se usa para el aseo personal." }
 										]
 		},
 		{ "palabra": "arbol", "ayuda": [
@@ -82,8 +82,8 @@ var jsonData = {
 											{ "pista": "." }
 										]
 		},
-		{ "palabra": "muelle", "ayuda": [
-											{ "pista": "El barco se puede anclar aquí." },
+		{ "palabra": "caballo", "ayuda": [
+											{ "pista": "En la imagen está comiendo." },
 											{ "pista": "." }
 										]
 		},

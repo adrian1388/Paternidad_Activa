@@ -83,7 +83,9 @@ function escogerTema(tema){
 
 function llenarImagenDiv(tema){
     var nodeImg = document.getElementsByClassName("imagen_tema");
-    nodeImg[0].innerHTML = '<img src="' + jsonData.App[tema].imagen.src + '" alt="' + jsonData.App[tema].imagen.alt + '" width="500" height="354">';
+    nodeImg[0].innerHTML = '<img id="imagen_game" src="' + jsonData.App[tema].imagen.src + '" alt="' + jsonData.App[tema].imagen.alt + '" width="500" height="354">';
+    var imagen_gameNode = document.getElementById("imagen_game");
+    animationAgrandar(imagen_gameNode);
 }
 
 function llenarRespuestasArray(tema){
@@ -159,10 +161,12 @@ function validateInput(){
 	        audioExito.autoplay = true;
 
 	    	var nodeSpan = document.getElementById("palabra" + (i+1)); //nodo que contiene el glyphicon question
-	    	var parent = nodeSpan.parentNode.parentNode.parentNode; //nodo que contiene el estado de bloqueado
+	    	var parent = nodeSpan.parentNode.parentNode; //nodo que contiene el estado de bloqueado
 
 	    	//parent.className = "palabra";
 	    	parent.innerHTML = "<div class='palabra'><span id='palabra" + (i+1) +"'>" + inputString + "</span><span class='glyphicon glyphicon-ok'></span></div>"; //agrego la palabra al nodo span
+	    	var adivinarOKNode = document.getElementsByClassName("palabra");
+	    	animationadivinarOK(adivinarOKNode[0]);
 	    	// parent.outerHTML = "<div class='palabra'></div"; //cambia el estado a desbloqueado
 	    	// nodeSpan.outerHTML = "<span id='palabra" + i + 1 +"'>" + inputString + "</span>"; //agrego la palabra al nodo span
 	    	//var node = document.createElement("span");
@@ -212,8 +216,19 @@ function animationErr(boxOne) {
     },false);
 }
 
+function animationAgrandar(divImg) {
+	divImg.classList.add('agrandar');
+    divImg.addEventListener("animationend",function(){
+        divImg.classList.remove('agrandar');
+    },false);
+}
 
-
+function animationadivinarOK(adivinarOKNode) {
+	adivinarOKNode.classList.add('adivinarOK');
+    adivinarOKNode.addEventListener("animationend",function(){
+        adivinarOKNode.classList.remove('adivinarOK');
+    },false);
+}
 
 
 

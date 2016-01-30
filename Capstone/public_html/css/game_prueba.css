@@ -4,7 +4,7 @@ button {
 }
 
 body {
-    background: #3EAAD6;
+    background: rgb(17,123,209);
 }
 
 
@@ -16,7 +16,7 @@ body {
 .inline {
     display: inline-block;
     vertical-align: top;
-    height: 625px;
+    height: inherit;
     border-radius: 15px;
 }
 #tablero > .inline {
@@ -28,21 +28,31 @@ body {
 }
 
 #main {
-    width: 100%;
-
+    width: 99%;
     margin-top: 1%;
+    height: 700px;
+    margin-bottom: 1%;
+}
+
+
+.wrap-niveles {
+    margin-top: 01%;
 }
 
 #niveles {
-    width: 15%;
+    padding-top: 16.7%;
+    width: 14%;
     background-color: rgb(17,123,209);
 
     overflow-y: auto;
 }
 
 #juego {
-    width: 59%;
+    width: 60%;
     background-color: rgb(157,219,234);
+}
+#juego > .center {
+    width: 790px;
 }
 
 #papa {
@@ -51,14 +61,15 @@ body {
 }
 
 .nivel {
-    background-color: rgb(183,238,255);
-    width: 50%;
+    width: 60%;
     text-align: center;
     line-height: 50px;
-    border: solid rgb(218, 59, 59) 4px;
-    border-radius: 22px;
+    border-radius: 15px;
     margin: 10px auto;
     cursor: pointer;
+
+    border: 1px solid #32774E;
+    background: transparent linear-gradient(rgb(183,238,255), #449280) repeat scroll 0% 0%;
 }
 
 .nivel-bloqueado {
@@ -67,7 +78,8 @@ body {
     cursor: not-allowed;
 }
 
-.nivel:hover {
+.smallBtn {
+  margin: 0 15px;
 }
 
 
@@ -75,10 +87,8 @@ body {
 
 
 
-
-
 .wrap-controles {
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 .wrap-controles input {
@@ -99,17 +109,75 @@ body {
 
 .controles button {
     height: 35px;
-
-    background-color: rgb(255,215,55);
+    background-color: #FBE691;
 
     padding: 0px 15px;
     border-radius: 10px;
+    border: 2px solid #32774E;
+    background: transparent linear-gradient(rgb(117, 208, 245), #449280) repeat scroll 0% 0%;
+    margin-left: 10px;
 }
 
 .controles #enviar {
     padding: 0px 25px;
     border-radius: 10px;
-    border: 4px solid rgba(187,30,30,0.87);
+}
+
+.agrandar{
+    -webkit-animation-name: agrandar;
+    -webkit-animation-duration: 0.125s;
+    -moz-animation-name: agrandar;
+    -moz-animation-duration: 0.125s;
+
+}
+@-webkit-keyframes agrandar{
+    from {
+        padding-top: 30%;
+        width: 0;
+        height: 0;
+    }
+    to {
+        padding-top: 0%;
+        width: 500px;
+        height: 354px;
+    }
+}
+@-moz-keyframes agrandar{
+    from {
+        padding-top: 30%;
+        width: 0;
+        height: 0;
+    }
+    to {
+        padding-top: 0%;
+        width: 500px;
+        height: 354px;
+    }
+}
+
+
+.adivinarOK{
+    -webkit-animation-name: adivinarOK;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-name: adivinarOK;
+    -moz-animation-duration: 0.5s;
+
+}
+@-webkit-keyframes adivinarOK{
+    from {
+        line-height: 0
+    }
+    to {
+        line-height: 90px;
+    }
+}
+@-moz-keyframes adivinarOK{
+    from {
+        line-height: 0
+    }
+    to {
+        line-height: 90px;
+    }
 }
 
 
@@ -125,7 +193,9 @@ body {
 
 
 
-
+.subtitulo {
+    text-align: center;
+}
 
 .wrap-respuestas {
     width: 260px;
@@ -164,14 +234,19 @@ body {
 
 
 
-
+.respuestas {
+    margin-top: 10px;
+}
 
 .imagen_tema {
-    border: 10px solid #DA3B3B;
-    margin-left: 10px;
-    margin-top: 14px;
+    border: 10px solid rgb(181, 82, 82);
+    margin-left: 5px;
+    margin-top: 20px;
     border-radius: 5px;
-}
+    margin-bottom: 20px;
+    width: 520px;
+    height: 374px;
+  }
 
 .pista {
     width: 130px;
@@ -182,24 +257,25 @@ body {
 .pista button {
     height: 35px;
     width: 130px;
-    background-color: #FFD737;
+    background-color: #FBE691;
     padding: 0px 15px;
     border-radius: 10px;
-    border: 4px solid rgba(187,30,30,0.87);
     margin-top: 20px;
+
+    border: 2px solid #32774E;
+    background: transparent linear-gradient(rgb(117, 208, 245), #449280) repeat scroll 0% 0%;
 }
 
 button:hover {
-    color: #001f9c;
+    color: #000;
 }
 
 .connection {
-    width: 100px;
+    width: 50px;
 }
 
 input:focus {
-    border: 4px solid rgba(187,30,30,0.87);
-    color: #001f9c;
+    border: 4px solid rgb(181, 82, 82);
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
     -webkit-animation-name: alineaIzq;
@@ -300,12 +376,12 @@ input:focus {
 .hvr-ripple-out:before {
   content: '';
   position: absolute;
-    border: rgb(255, 215, 55) solid 4px;
-    border-radius: 10px;  
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    border: #32774E solid 2px;
+    border-radius: 10px;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }
@@ -335,7 +411,7 @@ input:focus {
   content: '';
   border-style: solid;
   border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #DA3B3B;
+    border-color: transparent transparent transparent #B7EEFF;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
@@ -388,8 +464,7 @@ input:focus {
     top: 0;
     right: 0;
     display: block;
-    font-family: "Verdana", Arial, sans-serif;
-    font-size: 27px;
+    font-size: 20px;
     font-weight: bold;
     color: #333333;
     color: rgba(0,0,0,0.3);
@@ -397,11 +472,20 @@ input:focus {
     background-color: #000;
     color: rgba(255,255,255,0.8);
     border-radius: 999em;
-    height: 30px;
-    width: 30px;
+    height: 24px;
+    width: 24px;
     text-align: center;
   z-index:1003;
 }
+.close:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: 1;
+    background-color: #6495ED;
+}
+
 a {
     text-decoration: none;
     color: #333;
