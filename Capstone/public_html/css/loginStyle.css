@@ -9,6 +9,13 @@ and open the template in the editor.
 */
 @import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
 
+@font-face {
+  font-family:"Arista";
+  src:url("../fonts/Arista.eot?") format("eot"),url("../fonts/Arista.woff") format("woff"),url("../fonts/Arista.ttf") format("truetype"),url("../fonts/Arista.svg#Arista") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
 *{
   box-sizing:border-box;
   -moz-box-sizing:border-box;
@@ -24,16 +31,27 @@ body{
     background-size: cover !important;
     background-repeat: no-repeat;
     background-image: url("../img/fondoPaper3.png");
+    color: #191F75;
 }
 
 .container{
-    color: #000;
+    color: #191F75;
 }
 
-h1{
-  color:#000;
+h2{
   text-align:center;
-  font-faimly:icon;
+}
+
+.mycss {
+  font-weight: normal;
+  color: #191F75;
+  letter-spacing: 10pt;
+  word-spacing: 30pt;
+  font-size: 69px;
+  text-align: center;
+  font-family: "Love Ya Like A Sister",cursive;
+  line-height: 2;
+  text-shadow: 1px 1px #FFF;
 }
 
 .login-form{
@@ -44,6 +62,7 @@ h1{
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
   margin:50px auto;
+
 }
 .form-group{
   position: relative;
@@ -56,14 +75,16 @@ h1{
   padding:5px 7px 5px 15px;
   background:#fff;
   color:#666;
-  border:2px solid #E0D68F;
+  border:2px solid rgba(235, 235, 205, 0.7);
   border-radius:4px;
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
+
+  font-size: 15px;
 }
 .form-control:focus, .form-control:focus + .fa{
-  border-color:#10CE88;
-  color:#10CE88;
+  border-color:#3EAAD6;
+  box-shadow: none;
 }
 .form-group .fa{
   position: absolute;
@@ -114,15 +135,17 @@ h1{
   100% {left: 0px;}
 }
 .log-btn{
-  background:#0AC986;
+        border: 1px solid #007AAA;
+        background: transparent linear-gradient(#75D0F5, #1F8F2C) repeat scroll 0% 0%;
+        border-radius: 10px;
+
   dispaly:inline-block;
-  width:100%;
+  width:120px;
   font-size:16px;
   height:50px;
-  color:#fff;
+  color:#000;
   text-decoration:none;
-  border:none;
-  border-radius:4px;
+
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
 }

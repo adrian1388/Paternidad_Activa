@@ -3,15 +3,17 @@ $(document).ready(function(){
      * VARIABLES GLOBALES 
     */  
     //status de panel lateral: 1 ON (default), 0 OFF  
-    var status = 1;  
+    var status = 1;
+    var statusDer = 1;
     //selectores  
     var iframe = $("#iframe");  
     var tip = $("#tip");  
-    var title = $("#content h2");  
-    var toggler = $("#toggler");  
+    var title = $("#content h2");
     var lateral = $("#lateral");
     var lateralDer = $("#lateralDer");
-    var saveBtn = $("#save");
+    var lateralGroup = $("#lateralGroup");
+    var atrasBtn = $("#atras");
+    var siguienteBtn = $("#siguiente");
     var lateralWidth = lateral.width() + "px";  
     //dimensiones disponibles para elementos del panel  
     var windowHeight = 0;  
@@ -23,7 +25,9 @@ $(document).ready(function(){
      * AL CARGAR EL DOCUMENTO 
     */  
     calculateDimensions();
-    saveBtn.hide();
+    
+    atrasBtn.css('visibility', 'hidden');
+    
       
       
     /* 
@@ -37,7 +41,8 @@ $(document).ready(function(){
     /* 
      * AL HACER CLICK EN TOGGLER (PANEL LATERAL) 
     */  
-    toggler.click(clickToggler);  
+    atrasBtn.click(clickAtras);
+    siguienteBtn.click(clickSiguiente);
       
   
     /* 
@@ -55,29 +60,53 @@ $(document).ready(function(){
         */  
     }  
     // control de elemento lateral (toggler)  
-    function clickToggler(){          
+    function clickSiguiente(){          
         //ocultamos panel si esta mostrandose  
-        if(status ==1){  
+        if(status == 1){  
             lateral.hide();
             lateralDer.show();
-            lateralDer.css("margin-left","0px");  
-            toggler.addClass("off");
-            toggler.text("Atrás");
-            saveBtn.show();
+            atrasBtn.show();
+            //siguienteBtn.text("Atrás");
+            //siguienteBtn.show();
+            atrasBtn.css('visibility', 'visible');
               
-            status = 0;  
+            status = 2;  
         }  
         //mostramos panel si esta oculto  
-        else{  
+        else if(status == 2){
+            lateralDer.hide();
+            lateralGroup.show();
+            lateralGroup.css("margin-left", "0px");  
+            // toggler.removeClass("off");
+            // toggler.text("Siguiente");
+            // saveAndGroupBtn.hide();
+            siguienteBtn.text("Guardar");
+              
+            status = 3;  
+        }  
+    }
+    // control de elemento lateralDer (toggler)  
+    function clickAtras(){          
+        //ocultamos panel si esta mostrandose  
+        if(status == 2){  
             lateral.show();
             lateralDer.hide();
-            lateralDer.css("margin-left", lateralWidth);  
-            toggler.removeClass("off");
-            toggler.text("Continuar");
-            saveBtn.hide();
+            
+            atrasBtn.css('visibility', 'hidden');
               
-            status = 1;  
+            status = 1;
+        }
+        //mostramos panel si esta oculto  
+        else if(status == 3){  
+            lateralGroup.hide();
+            lateralDer.show();
+            lateralDer.css("margin-left","0px");
+            // toggler.removeClass("off");
+            // toggler.text("Atrás");
+            siguienteBtn.text("Siguiente");
+              
+            status = 2;
         }  
-    }  
+    }
 
 }); 

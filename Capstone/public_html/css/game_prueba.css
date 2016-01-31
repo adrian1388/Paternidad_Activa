@@ -68,8 +68,8 @@ body {
     margin: 10px auto;
     cursor: pointer;
 
-    border: 1px solid #32774E;
-    background: transparent linear-gradient(rgb(183,238,255), #449280) repeat scroll 0% 0%;
+        border: 1px solid #007AAA;
+        background: transparent linear-gradient(#75D0F5, #1F8F2C) repeat scroll 0% 0%;
 }
 
 .nivel-bloqueado {
@@ -113,8 +113,9 @@ body {
 
     padding: 0px 15px;
     border-radius: 10px;
-    border: 2px solid #32774E;
-    background: transparent linear-gradient(rgb(117, 208, 245), #449280) repeat scroll 0% 0%;
+    color: #000;
+    border: 1px solid #007AAA;
+    background: transparent linear-gradient(rgb(117, 208, 245), #1F8F2C) repeat scroll 0% 0%;
     margin-left: 10px;
 }
 
@@ -259,11 +260,12 @@ body {
     width: 130px;
     background-color: #FBE691;
     padding: 0px 15px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-top: 20px;
+    color: #000;
 
-    border: 2px solid #32774E;
-    background: transparent linear-gradient(rgb(117, 208, 245), #449280) repeat scroll 0% 0%;
+    border: 1px solid #007AAA;
+    background: transparent linear-gradient(rgb(117, 208, 245), #1F8F2C) repeat scroll 0% 0%;
 }
 
 button:hover {
@@ -376,12 +378,12 @@ input:focus {
 .hvr-ripple-out:before {
   content: '';
   position: absolute;
-    border: #32774E solid 2px;
+    border: #007AAA solid 1px;
     border-radius: 10px;
-  top: -2px;
-  right: -2px;
-  bottom: -2px;
-  left: -2px;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
 }

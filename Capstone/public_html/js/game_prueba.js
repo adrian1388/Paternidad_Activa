@@ -71,7 +71,7 @@ function setTurno(){
 function llenarNiveles() {
     for (var i = 0; i < 3; i++) {
         var nodeNivel = document.getElementById("tema" + (i + 1));
-        nodeNivel.innerText = "" + jsonData.App[i].imagen.alt + "";
+        nodeNivel.innerHTML = "" + jsonData.App[i].imagen.alt + "";
     }
     
 }

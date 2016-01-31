@@ -25,6 +25,7 @@
 
 
 @import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
 
 body {
   background: url('../img/fondoPaper3.png') #3EAAD6;
@@ -52,6 +53,12 @@ body {
         height: 100%;
         margin: 0 auto;
     }
+
+    .lateralGroup {
+        width: 600px;
+        height: 100%;
+        margin: 0 auto;
+    }
       
 
       
@@ -61,38 +68,41 @@ body {
     */  
     #butToggler {
         margin: 0px auto;
-        width: 150px;
+        width: 285px;
     }
 
-    #toggler{  
+    #atras{  
         width: 100px;
         border-left: 1px solid #c2cff1;  
         float: left;
         text-align: center;
-        line-height: 70px;
+        line-height: 50px;
 
         background-color: #FBE691;
 
         padding: 0px 15px;
         
         border-radius: 10px;
-        border: 2px solid #32774E;
-        background: transparent linear-gradient(rgb(117, 208, 245), #449280) repeat scroll 0% 0%;
-    }  
-    #save{  
+        border: 1px solid #007AAA;
+        background: transparent linear-gradient(#75D0F5, #1F8F2C) repeat scroll 0% 0%;
+    }
+
+    #siguiente{  
         width: 100px;
         border-left: 1px solid #c2cff1;  
         float: left;
         text-align: center;
-        line-height: 70px;
+        line-height: 50px;
 
         background-color: #FBE691;
 
         padding: 0px 15px;
 
+        margin-left: 15px;
+
         border-radius: 10px;
-        border: 2px solid #32774E;
-        background: transparent linear-gradient(rgb(117, 208, 245), #449280) repeat scroll 0% 0%;
+        border: 1px solid #007AAA;
+        background: transparent linear-gradient(#75D0F5, #1F8F2C) repeat scroll 0% 0%;
     } 
 
     #toggler:hover{  
@@ -127,7 +137,17 @@ body {
 
 /***************************************************************************************/
 
-
+.mycss {
+  font-weight: normal;
+  color: #191F75;
+  letter-spacing: 10pt;
+  word-spacing: 30pt;
+  font-size: 69px;
+  text-align: center;
+  font-family: "Love Ya Like A Sister",cursive;
+  line-height: 2;
+  text-shadow: 1px 1px #FFF;
+}
 
 
 
@@ -138,8 +158,6 @@ body {
 }
 .title {
   text-align: center;
-  border-bottom: 2px solid #15B0A6;
-  text-shadow: 1px 1px #15B0A6;
 }
 .boton_crear {
   text-align: center;
@@ -177,9 +195,6 @@ body {
 .two .register {
   border: none;
 }
-.two .register h3 {
-  border-bottom-color: #909090;
-}
 .two .register .sep {
   border-color: #909090;
 }
@@ -194,7 +209,6 @@ body {
 }
 .register h3 {
   margin: 0 15px 20px;
-  border-bottom: 2px solid #15B0A6;
   padding: 5px 10px 5px 0;
   font-size: 1.1em;
 }
@@ -209,7 +223,7 @@ body {
   font-size: 0.9em;
   /*margin: 10px;*/
 }
-.register input[type=text], .register input[type=password] {
+.register input[type=text], .register input[type=password], .register input[type=email] {
   width: 63%;
   /*font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;*/
   padding: 5px;
@@ -217,7 +231,7 @@ body {
   border-radius: 5px;
   background: rgba(28,181,232,0.07);
 }
-.register input[type=text]:focus, .register input[type=password]:focus {
+.register input[type=text]:focus, .register input[type=password]:focus, .register input[type=email]:focus {
   background: #FFFFFF;
 }
 .button {

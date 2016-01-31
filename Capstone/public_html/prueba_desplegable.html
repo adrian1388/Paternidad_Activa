@@ -6,36 +6,33 @@
             <link rel="stylesheet" href="css/prueba_desplegable.css" type="text/css" />  
         </head>  
         <body>
+            <div class="mycss">R&Auml;TSEL</div>
 
-                <div class="title">
-                  <h1>Registro de Jugadores</h1>
-                </div>
+
  
               
             <div id="lateral">  
+
                 <div class="one">
                     <div class="register">
+
+                <div class="title">
+                  <h2>Registro de Jugadores</h2>
+                </div>
 
                       <h3>Información de papá</h3>
                       <form id="reg-form">
                         <div>
                           <label for="name">Nombre</label>
-                          <input id="name" spellcheck="false" placeholder="Juan José Arnulfio" type="text">
+                          <input id="name" spellcheck="false" placeholder="" type="text">
                         </div>
                         <div>
                           <label for="email">Email *</label>
-                          <input id="email" spellcheck="false" placeholder="juan.arnulfio@xyz.com" type="text">
-                        </div>
-                        <div>
-                          <label for="sexo">Sexo</label>
-                          <select class="form-control" id="sexoPadre">
-                            <option value="0">Hombre</option>
-                            <option value="1">Mujer</option>
-                          </select>
+                          <input id="email" spellcheck="false" placeholder="" type="email">
                         </div>
                         <div>
                           <label for="username">Usuario *</label>
-                          <input id="username" spellcheck="false" placeholder="juanarn7" type="text">
+                          <input id="username" spellcheck="false" placeholder="" type="text">
                         </div>
                         <div>
                           <label for="password">Contraseña *</label>
@@ -55,26 +52,22 @@
                  
                 <div class="two">
                     <div class="register">
+                <div class="title">
+                  <h2>Registro de Jugadores</h2>
+                </div>
                       <h3>Información de hijo</h3>
                       <form id="reg-form">
                         <div>
                           <label for="name">Nombre</label>
-                          <input id="name" spellcheck="false" placeholder="Pepe Arnulfio Soler" type="text">
+                          <input id="name" spellcheck="false" placeholder="" type="text">
                         </div>
                         <div>
                           <label for="email">Email *</label>
-                          <input id="email" spellcheck="false" placeholder="pepito@xyz.com" type="text">
-                        </div>
-                        <div>
-                          <label for="sexo">Sexo</label>
-                          <select class="form-control" id="sexoHijo">
-                            <option value="0">Hombre</option>
-                            <option value="1">Mujer</option>
-                          </select>
+                          <input id="email" spellcheck="false" placeholder="" type="email">
                         </div>
                         <div>
                           <label for="username">Usuario *</label>
-                          <input id="username" spellcheck="false" placeholder="pepito55" type="text">
+                          <input id="username" spellcheck="false" placeholder="" type="text">
                         </div>
                         <div>
                           <label for="password">Contraseña *</label>
@@ -84,6 +77,34 @@
                           <label for="password-again">Confirmar Contraseña *</label>
                           <input id="password-again" type="password">
                         </div>
+                        <div>
+                          <label for="sexo">Sexo</label>
+                          <select class="form-control" id="sexoHijo">
+                            <option value="HOMBRE">Hombre</option>
+                            <option value="MUJER">Mujer</option>
+                          </select>
+                        </div>
+                      </form>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div id="lateralGroup" style="display: none;">
+                 
+                <div class="two">
+                    <div class="register">
+                <div class="title">
+                  <h2>Registro del Equipo</h2>
+                </div>
+                      <h3>Ahora tú y tu hijo forman un equipo. Ponle un nombre a tu equipo.</h3>
+                      <form id="reg-form">
+
+                        <div>
+                          <label for="name">Nombre del equipo</label>
+                          <input id="nameTeam" spellcheck="false" placeholder="" type="text">
+                        </div>
+                        
                       </form>
                       
                     </div>
@@ -91,12 +112,13 @@
             </div>
 
             <div id="butToggler">
-              <a class="hvr-grow" style="height: 70px;" id="toggler">Continuar</a>
+              <a class="hvr-grow" style="height: 50px;" id="atras">Atrás</a>
             </div>
 
             <div id="butToggler">
-                <a class="hvr-grow" style="height:70px;" id="save">Guardar</a>
+                <a class="hvr-grow" style="height:50px;" id="siguiente">Siguiente</a>
             </div>
+
 
             <!-- scripts -->  
             <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>   
