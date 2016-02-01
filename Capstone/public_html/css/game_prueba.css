@@ -572,3 +572,48 @@ a {
   position: absolute;
   z-index:1002;
 }
+
+
+@media all and (max-width: 80em) {
+    #main {
+        height: 600px;
+    }
+    #niveles {
+        width: 10%;
+    }
+    .nivel {
+        width: 80%;
+    }
+
+    #juego {
+        width: 64%;
+    }
+    #juego > .center {
+        width: 640px;
+    }
+    .imagen_tema {
+        width: 360px;
+        height: 280px;
+        margin-top: 38px;
+    }
+    #imagen_game {
+        width: 350px;
+        height: 270px;
+    }
+    .palabra {
+        line-height: 64px;
+    }
+    .hvr-bubble-float-right::before {
+        right: -10px;
+    }
+    #videollamada {
+        width: 250px;
+        height: 250px;
+    }
+    #tablero > .inline {
+        height: 400px;
+    }
+    #texto {
+        margin: 3em;
+    }
+}
