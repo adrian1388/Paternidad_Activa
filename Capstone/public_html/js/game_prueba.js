@@ -91,7 +91,7 @@ function escogerTema(tema){
 
 function llenarImagenDiv(tema){
     var nodeImg = document.getElementsByClassName("imagen_tema");
-    nodeImg[0].innerHTML = '<img id="imagen_game" src="' + jsonData.App[tema].imagen.src + '" alt="' + jsonData.App[tema].imagen.alt + '" width="500" height="354">';
+    nodeImg[0].innerHTML = '<img id="imagen_game" src="' + jsonData.App[tema].imagen.src + '" alt="' + jsonData.App[tema].imagen.alt + '" width="500" height="364">';
     var imagen_gameNode = document.getElementById("imagen_game");
     animationAgrandar(imagen_gameNode);
 }
@@ -121,6 +121,7 @@ function llenarRespuestasDiv(tema){
 
 	    parent.className = "palabra";
         parent.classList.add("palabra-escondida");
+        parent.title = "PISTA"
 	    parent.innerHTML = "<span id='palabra" + (i+1) +"' class='glyphicon glyphicon-question-sign'></span>"; //agrego la palabra al nodo span
 
 	}
@@ -128,6 +129,53 @@ function llenarRespuestasDiv(tema){
 function pistasAleatorioGeneral(){
 	var randomNum = Math.floor(Math.random()*8 + 0);
 	llenarPistasDiv(randomNum);
+}
+var x = null;
+var y = null;
+var numeroPalabra = null;
+
+document.addEventListener('mousemove', onMouseUpdate, false);
+document.addEventListener('mouseenter', onMouseUpdate, false);
+
+function onMouseUpdate(e) {
+    x = e.pageX;
+    y = e.pageY;
+}
+
+function showAyudaUnoyDos(element){
+    var nodePalabra = document.getElementById("ayudaUnoyDos");
+    nodePalabra.style.position = "absolute";
+    nodePalabra.style.top = y + "px";
+    nodePalabra.style.left = x + "px";
+    nodePalabra.style.display = "block";
+    document.getElementById('fade3').style.display='block';
+    numeroPalabra = element;
+}
+
+function clickPista(){
+    llenarPistasDiv(numeroPalabra);
+    document.getElementById('light').style.display='block';
+    document.getElementById('fade').style.display='block';
+    document.getElementById('ayudaUnoyDos').style.display='none';
+    document.getElementById('fade3').style.display='none';
+}
+
+function clickTresLetras(){
+    llenarTresLetrasDiv(numeroPalabra);
+    document.getElementById('ayudaUnoyDos').style.display='none';
+    document.getElementById('fade3').style.display='none';
+}
+
+function llenarTresLetrasDiv(palabra_i){
+    var nodeSpan = document.getElementById("palabra" + (palabra_i)); //nodo que contiene el glyphicon question
+    var parent = nodeSpan.parentNode; //nodo que contiene el estado de bloqueado
+
+    parent.className = "palabra";
+    parent.classList.add("palabra-escondida");
+    parent.title = "PISTA"
+    var restanteLength = respuestasDefault[palabra_i - 1].length - 2;
+    var palabraTresLetras = respuestasDefault[palabra_i - 1].toLowerCase().substring(0,3) + "_".repeat(restanteLength);
+    parent.innerHTML = "<span id='palabra" + palabra_i + "'>" + palabraTresLetras + "</span>" + "<span class='glyphicon glyphicon-question-sign'></span>"; //agrego la palabra al nodo span
 }
 
 function llenarPistasDiv(palabra_i){

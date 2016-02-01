@@ -23,6 +23,7 @@
 </head>
 <body onLoad="onLoadEvent();">
     <div id="main" class="center">
+        <div class="mycss">RÄTSEL</div>
         <div id="niveles" class="inline">
             <div class="wrap-niveles">
                 <div id="tema1" class="nivel hvr-grow hvr-bubble-float-right" onclick="escogerTema(0)">Tema 1</div>
@@ -33,18 +34,19 @@
         <div id="juego" class="inline">
 
             <div class="center">
-            <div id="acciones">
-                <button class="smallBtn">Regresar</button>
+            <div style="" id="acciones">
+                <button class="smallBtn hvr-grow">Regresar</button>
+                <div class="inform" style="display: inline-block;">Puntos:<p id="puntos">305</p></div>
+                <div class="inform" style="display: inline-block;">Puesto del equipo:<p id="puesto">37</p></div>
             </div>
-
+<!-- 
             <div id="titulo">
-                <h1 style="text-align: center">Adivina las palabras que tienen alguna relaci&oacute;n con la imagen.</h1>
+                <h1 style="text-align: center">¡Adivina!</h1>
             </div>
-
+ -->
             <div id="tablero">
                 <div class="wrap-adivinanza inline">
 
-                    <h4 class="subtitulo">imagen</h4>
                     <div class="imagen_tema">
                         <img src="img/zoo.png" alt="Zoológico" width="500" height="354">
                     </div>
@@ -61,74 +63,81 @@
 
                 <div class="wrap-respuestas inline">
 
-                    <h4 class="subtitulo">respuestas</h4>
+                    <p class="subtitulo">RESPUESTAS Y PISTAS</p>
                     <div class="respuestas">
                         <div class="wrap-palabra hvr-grow">
-                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(1);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
+                            <a href = "javascript:void(0)" onclick = "showAyudaUnoyDos(1);">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra1" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                             </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
-                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(2);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
+                            <a href = "javascript:void(0)" onclick = "showAyudaUnoyDos(2);">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra2" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                             </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
-                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(3);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
+                            <a href = "javascript:void(0)" onclick = "showAyudaUnoyDos(3);">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra3" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                             </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
-                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(4);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
+                            <a href = "javascript:void(0)" onclick = "showAyudaUnoyDos(4);">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra4" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                             </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
-                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(5);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
+                            <a href = "javascript:void(0)" onclick = "showAyudaUnoyDos(5);">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra5" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                             </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
-                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(6);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
+                            <a href = "javascript:void(0)" onclick = "showAyudaUnoyDos(6);">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra6" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                             </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
-                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(7);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
+                            <a href = "javascript:void(0)" onclick = "showAyudaUnoyDos(7);">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra7" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                             </a>
                         </div>
                         <div class="wrap-palabra hvr-grow">
-                            <a href = "javascript:void(0)" onclick = "llenarPistasDiv(8);document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';">
+                            <a href = "javascript:void(0)" onclick = "showAyudaUnoyDos(8);">
                             <div class="palabra palabra-escondida">
                                 <span id="palabra8" class="glyphicon glyphicon-question-sign"></span>
                             </div>
                             </a>
+                        </div>
+                        <div id="ayudaUnoyDos">
+                            <button class="btn" onclick="clickPista();">Pedir pista</button>
+                            <button class="btn" onclick="clickTresLetras();">Pedir 3 letras</button>
                         </div>
                     </div>
 					
 					<div class="pista ">
                         <a href = "javascript:void(0)" onclick = "pistasAleatorioGeneral();document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
 						<button id="pista" class="center hvr-grow hvr-ripple-out">
-							Ayuda
-							<span class="glyphicon glyphicon-question-sign"></span>
+							¿Pedir ayuda a otro niño?
+							<!-- <span class="glyphicon glyphicon-question-sign"></span> -->
 						</button>
                         </a>
 					</div>
+                </div>
+                <div id="texto" class="center">
+                    <p>El juego consiste en adivinar las palabras que crees que existen o tienen alguna relación con la imagen mostrada. ¡Suerte!</p>
                 </div>
             </div>
             </div>
@@ -147,9 +156,9 @@
                 </div>
             </div>
             <div>
-                <div>
-                    <button onclick="setTurno();document.getElementById('light2').style.display='block';document.getElementById('fade2').style.display='block'" class="smallBtn">Jugar con papá</button>
-                    <button class="smallBtn">Preguntar a papá</button>
+                <div id="btnPapa">
+                    <button onclick="setTurno();document.getElementById('light2').style.display='block';document.getElementById('fade2').style.display='block'" class="smallBtn hvr-grow">Jugar con papá</button>
+                    <button class="smallBtn hvr-grow">Preguntar a papá</button>
                 </div>
                 <div id="videollamada">
                     <div style="width=1;width: 300px;height: 300px;text-align: center;border: solid #aaa;" class="center">VIDEO</div>
@@ -161,11 +170,18 @@
 
             <div id="popupDiv">
                 <div id="light" class="white_content"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="close">x</a><p id="parrafoPista"></p></div>
+                <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';" style="cursor:default;">
                 <div id="fade" class="black_overlay"></div>
+                </a>
+                <a href = "javascript:void(0)" onclick = "document.getElementById('ayudaUnoyDos').style.display='none';document.getElementById('fade3').style.display='none';" style="cursor:default;">
+                <div id="fade3" ></div>
+                </a>
             </div>
             <div id="popupDiv2">
                 <div id="light2" class="white_content"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade2').style.display='none'" class="close">X</a><p id="Turno_Set"></p></div>
+                <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade2').style.display='none';" style="cursor:default;">
                 <div id="fade2" class="black_overlay"></div>
+                </a>
             </div>
 
         </div>

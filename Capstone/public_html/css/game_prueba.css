@@ -1,13 +1,13 @@
 
-button {
-    border: 0;
-}
+@import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
 
 body {
     background: rgb(17,123,209);
 }
 
-
+button {
+    border: 1px solid #007AAA;
+}
 
 .center {
     margin: 0 auto;
@@ -18,6 +18,8 @@ body {
     vertical-align: top;
     height: inherit;
     border-radius: 15px;
+    margin-bottom: 1em;
+    padding-top: 0.5em;
 }
 #tablero > .inline {
     height: 500px;
@@ -27,20 +29,32 @@ body {
     text-align: center;
 }
 
+.mycss {
+    font-weight: normal;
+    color: #FFF;
+    letter-spacing: 5pt;
+    word-spacing: 30pt;
+    text-align: center;
+    font-family: "Love Ya Like A Sister";
+    font-size: 60px;
+}
+
 #main {
     width: 99%;
-    margin-top: 1%;
-    height: 700px;
+    height: 650px;
     margin-bottom: 1%;
 }
 
+#acciones {
+    text-align: center;
+}
 
 .wrap-niveles {
     margin-top: 01%;
 }
 
 #niveles {
-    padding-top: 16.7%;
+    padding-top: 11.7%;
     width: 14%;
     background-color: rgb(17,123,209);
 
@@ -68,7 +82,7 @@ body {
     margin: 10px auto;
     cursor: pointer;
 
-        border: 1px solid #007AAA;
+        border: 1px solid #0020AA;
         background: transparent linear-gradient(#75D0F5, #1F8F2C) repeat scroll 0% 0%;
 }
 
@@ -79,16 +93,53 @@ body {
 }
 
 .smallBtn {
-  margin: 0 15px;
+  padding: 0px 15px;
+  border-radius: 5px;
+  color: #000;
+  border: 1px solid #007AAA;
+  background: transparent linear-gradient(#75D0F5, #16A2C8) repeat scroll 0% 0%;
+  
+  font-size: 13px;
+  line-height: 20px;
+  margin-left: 1em;
+}
+
+.btn {
+  border: 1px solid #007AAA;
+  line-height: 0.7em;
+  display: block;
+  width: 8em;
+  text-align: left;
+}
+
+.inform p {
+    display: inline-block;
+    color: #C90000;
+    font-size: 16px;
+    margin-left: 1em;
+}
+.inform {
+  width: 12em;
+}
+
+#btnPapa {
+    text-align: center;
+}
+
+#texto {
+    background: #F8F65E;
+    width: 40em;
+    border: 1px solid #117BD1;
+    padding: 0.2em 1em;
+    border-radius: 0.4em;
 }
 
 
 
 
 
-
 .wrap-controles {
-    margin-top: 24px;
+    margin-top: 33px;
 }
 
 .wrap-controles input {
@@ -104,7 +155,7 @@ body {
     height: 35px;
     color: black;
     border-radius: 10px;
-    border: 2px solid rgba(159, 121, 121, 0.87);
+    border: 2px solid #C54141;
 }
 
 .controles button {
@@ -196,6 +247,14 @@ body {
 
 .subtitulo {
     text-align: center;
+    border-top: 1px solid #C54141;
+    margin-bottom: -12px;
+    margin-left: 10px;
+}
+
+.wrap-respuestas > .subtitulo {
+    margin-left: 4px;
+    margin-right: 6px;
 }
 
 .wrap-respuestas {
@@ -213,7 +272,7 @@ body {
     font-size: 16px;
     text-align: center;
     border-radius: 15px;
-    border: 2px solid rgba(159, 121, 121, 0.87);
+    border: 2px solid #117BD1;
     margin: 5px;
 }
 
@@ -240,24 +299,24 @@ body {
 }
 
 .imagen_tema {
-    border: 10px solid rgb(181, 82, 82);
-    margin-left: 5px;
+    border: 5px solid #C54141;
+    margin-left: 10px;
     margin-top: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-    width: 520px;
+    width: 510px;
     height: 374px;
   }
 
 .pista {
-    width: 130px;
+    width: 230px;
     margin: 0 auto;
 }
 
 
 .pista button {
     height: 35px;
-    width: 130px;
+    width: 230px;
     background-color: #FBE691;
     padding: 0px 15px;
     border-radius: 8px;
@@ -277,7 +336,7 @@ button:hover {
 }
 
 input:focus {
-    border: 4px solid rgb(181, 82, 82);
+    border: 4px solid #C54141;
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
     -webkit-animation-name: alineaIzq;
@@ -448,9 +507,10 @@ input:focus {
 .white_content {
   text-align: center;
   font-size: 20px;
+  line-height: 100px;
   display: none;
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 25%;
   width: 50%;
   height: 25%;
@@ -491,4 +551,24 @@ input:focus {
 a {
     text-decoration: none;
     color: #333;
+}
+
+#fade3{
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -moz-opacity: 0.5;
+  opacity:.5;
+  filter: alpha(opacity=50);
+  z-index:1001;
+}
+
+#ayudaUnoyDos {
+  display: none;
+  position: absolute;
+  z-index:1002;
 }
