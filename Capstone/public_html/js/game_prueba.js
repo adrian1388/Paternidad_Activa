@@ -221,8 +221,9 @@ function validateInput(){
 
 	    	//parent.className = "palabra";
 	    	parent.innerHTML = "<div class='palabra'><span id='palabra" + (i+1) +"'>" + inputString + "</span><span class='glyphicon glyphicon-ok'></span></div>"; //agrego la palabra al nodo span
-	    	var adivinarOKNode = document.getElementsByClassName("palabra");
-	    	animationadivinarOK(adivinarOKNode[0]);
+	    	var adivinarOKNode = document.getElementById("palabra" + (i+1));
+                adivinarOKNode = adivinarOKNode.parentNode;
+	    	animationadivinarOK(adivinarOKNode);
 	    	// parent.outerHTML = "<div class='palabra'></div"; //cambia el estado a desbloqueado
 	    	// nodeSpan.outerHTML = "<span id='palabra" + i + 1 +"'>" + inputString + "</span>"; //agrego la palabra al nodo span
 	    	//var node = document.createElement("span");

@@ -81,6 +81,7 @@ button {
     border-radius: 15px;
     margin: 10px auto;
     cursor: pointer;
+    color: #000;
 
         border: 1px solid #0020AA;
         background: transparent linear-gradient(#75D0F5, #1F8F2C) repeat scroll 0% 0%;
@@ -112,7 +113,7 @@ button {
   text-align: left;
 }
 
-.inform p {
+.inform div {
     display: inline-block;
     color: #C90000;
     font-size: 16px;
@@ -132,6 +133,7 @@ button {
     border: 1px solid #117BD1;
     padding: 0.2em 1em;
     border-radius: 0.4em;
+        margin: 0 auto;
 }
 
 
@@ -139,7 +141,7 @@ button {
 
 
 .wrap-controles {
-    margin-top: 33px;
+    margin-top: 25px;
 }
 
 .wrap-controles input {
@@ -210,25 +212,29 @@ button {
 
 .adivinarOK{
     -webkit-animation-name: adivinarOK;
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.3s;
     -moz-animation-name: adivinarOK;
-    -moz-animation-duration: 0.5s;
+    -moz-animation-duration: 0.3s;
 
 }
 @-webkit-keyframes adivinarOK{
     from {
-        line-height: 0
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
     }
     to {
-        line-height: 90px;
+        -webkit-transform: scale(1.25);
+        transform: scale(1.25);
     }
 }
 @-moz-keyframes adivinarOK{
     from {
-        line-height: 0
+        -moz-transform: scale(0.5);
+        transform: scale(0.5);
     }
     to {
-        line-height: 90px;
+        -moz-transform: scale(1.25);
+        transform: scale(1.25);
     }
 }
 
@@ -247,7 +253,7 @@ button {
 
 .subtitulo {
     text-align: center;
-    border-top: 1px solid #C54141;
+    border-top: 1px solid #117BD1;
     margin-bottom: -12px;
     margin-left: 10px;
 }
@@ -272,7 +278,7 @@ button {
     font-size: 16px;
     text-align: center;
     border-radius: 15px;
-    border: 2px solid #117BD1;
+    border: 1px solid #117BD1;
     margin: 5px;
 }
 
@@ -399,8 +405,8 @@ input:focus {
   transition-property: transform;
 }
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 
@@ -592,9 +598,9 @@ a {
         width: 640px;
     }
     .imagen_tema {
-        width: 360px;
-        height: 280px;
-        margin-top: 38px;
+        width: 359px;
+        height: 279px;
+        margin-top: 37px;
     }
     #imagen_game {
         width: 350px;

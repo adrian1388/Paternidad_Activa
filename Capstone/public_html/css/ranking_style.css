@@ -1,0 +1,272 @@
+    /*  
+        Document    :   main.css 
+        Author      :   adrian mato 
+        Description :   Estilo general 
+    */  
+      /*
+    @CHARSET "UTF-8";  
+      */
+    /* 
+        Section    :    CSS RESET 
+        Description:    Reseteamos practicamente todos los valores de los selectores para facilitar el cross-browsing 
+    */  
+  /*  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,  
+    font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,  
+    tfoot, thead, tr, th, td, button{  
+        border:0pt none;  
+        font-family: inherit;  
+        font-size: 100%;  
+        font-style: inherit;  
+        font-weight: inherit;  
+        margin: 0pt;  
+        padding: 0pt;  
+        vertical-align: baselinebaseline;  
+    }  */
+
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
+
+body {
+  background: url('../img/fondoPaper3.png') #3EAAD6;
+  background-size: 100%;
+  font-family: 'Bree Serif', serif;
+        width: 800px;
+        line-height: auto;    
+        font-family: Helvetica, Arial, sans-serif;  
+        margin: 0 auto;
+        cursor: default;  
+        color: #000;  
+}
+    /* 
+        Section:        LATERAL 
+        Description:    Panel lateral donde mostramos las distintas fuentes RSS 
+    */  
+    #lateral{
+        width: 600px;  
+        height: 100%;  
+        margin: 0 auto;
+    }  
+    
+    .lateralDer {
+        width: 600px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .lateralGroup {
+        width: 600px;
+        height: 100%;
+        margin: 0 auto;
+    }
+      
+
+      
+    /* 
+        Section:        TOGGLER 
+        Description:    Boton que permitirá mostrar / ocultar el panel 
+    */  
+    #butToggler {
+        margin: 0px auto;
+        width: 133px;
+    }
+
+    #atras{  
+        width: 100px;
+        border-left: 1px solid #c2cff1;  
+        float: left;
+        text-align: center;
+        line-height: 50px;
+
+        background-color: #FBE691;
+
+        padding: 0px 15px;
+
+        padding: 0px 15px;
+        border-radius: 5px;
+        color: #000;
+        border: 1px solid #00597D;
+        background: transparent linear-gradient(#4CD2C7, #18C85E) repeat scroll 0% 0%;
+        
+    }
+
+    #siguiente{  
+        width: 100px;
+        border-left: 1px solid #c2cff1;  
+        float: left;
+        text-align: center;
+        line-height: 50px;
+
+        background-color: #FBE691;
+
+        padding: 0px 15px;
+
+        margin-left: 15px;
+
+        border-radius: 10px;
+        color: #000;
+        border: 1px solid #0A7DAB;
+        background: transparent linear-gradient(#75D0F5, #29A79E) repeat scroll 0% 0%;
+    } 
+
+    #toggler:hover{  
+        cursor: pointer;  
+    }  
+    #toggler.off{  
+        margin-left: 0;  
+    }  
+    #toggler.off:hover{  
+        margin-left: 0;  
+    }  
+
+/* Grow */
+.hvr-grow {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+
+/***************************************************************************************/
+
+.mycss {
+  font-weight: normal;
+  color: #191F75;
+  letter-spacing: 10pt;
+  word-spacing: 30pt;
+  font-size: 69px;
+  text-align: center;
+  font-family: "Love Ya Like A Sister",cursive;
+  line-height: 2;
+  text-shadow: 1px 1px #FFF;
+}
+
+
+
+
+
+#tabla {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+}
+
+#tablaRank {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 25px;
+
+}
+
+
+
+/***************************************************************************************/
+
+
+
+.datagrid table {
+    border-collapse: collapse; 
+    text-align: left; width: 100%; 
+} 
+.datagrid {
+    font: 17px/150% Arial,Helvetica,sans-serif;
+    background: #FFF none repeat scroll 0% 0%;
+    overflow: hidden;
+    border: 2px solid #069;
+    border-radius: 3px;
+    margin: 20px;
+}
+.datagrid table td, .datagrid table th {
+    padding: 3px 8px; 
+}
+.datagrid table thead th {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #75D0F5), color-stop(1, #007AAA) );
+    background:-moz-linear-gradient( center top, #75D0F5 5%, #007AAA 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#75D0F5', endColorstr='#007AAA');
+    background-color:#75D0F5;
+    color:#000000; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-left: 1px solid #007AAA; 
+} 
+.datagrid table thead th:first-child { 
+    border: none; 
+}
+.datagrid table tbody td { 
+    color: #00496B;
+    border-left: 1px solid #E1EEF4;
+    font-size: 12px;
+    font-weight: normal;
+}
+.datagrid table tbody .alt td {
+    background: #E1EEF4;
+    color: #00496B;
+}
+.datagrid table tbody td:first-child {
+    border-left: none; 
+}
+.datagrid table tbody tr:last-child td {
+    border-bottom: none;
+}
+.datagrid table tfoot td div {
+    border-top: 1px solid #006699;
+    background: #E1EEF4;
+}
+.datagrid table tfoot td {
+    padding: 0; 
+    font-size: 12px 
+} 
+.datagrid table tfoot td div{
+    padding: 2px; 
+}
+.datagrid table tfoot td ul {
+    margin: 0; 
+    padding:0;
+    list-style: none; 
+    text-align: right;
+}
+.datagrid table tfoot  li {
+    display: inline; 
+}
+.datagrid table tfoot li a { 
+    text-decoration: none; 
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 1px;
+    color: #FFFFFF;
+    border: 1px solid #006699;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+    background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color:#006699; 
+}
+.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover {
+    text-decoration: none;
+    border-color: #006699; 
+    color: #FFFFFF;
+    background: none; 
+    background-color:#00557F;
+}
+div.dhtmlx_window_active, div.dhx_modal_cover_dv { 
+    position: fixed !important; 
+}
