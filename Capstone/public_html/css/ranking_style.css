@@ -71,7 +71,7 @@ body {
         width: 133px;
     }
 
-    #atras{  
+    #btn{  
         width: 100px;
         border-left: 1px solid #c2cff1;  
         float: left;
@@ -90,24 +90,6 @@ body {
         
     }
 
-    #siguiente{  
-        width: 100px;
-        border-left: 1px solid #c2cff1;  
-        float: left;
-        text-align: center;
-        line-height: 50px;
-
-        background-color: #FBE691;
-
-        padding: 0px 15px;
-
-        margin-left: 15px;
-
-        border-radius: 10px;
-        color: #000;
-        border: 1px solid #0A7DAB;
-        background: transparent linear-gradient(#75D0F5, #29A79E) repeat scroll 0% 0%;
-    } 
 
     #toggler:hover{  
         cursor: pointer;  

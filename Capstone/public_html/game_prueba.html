@@ -6,6 +6,8 @@
     <meta name="keywords" content="">
 
     <title>Ratsel</title>
+    
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -165,7 +167,8 @@
             </div>
             <div>
                 <div id="btnPapa">
-                    <button onclick="setTurno();document.getElementById('light2').style.display='block';document.getElementById('fade2').style.display='block'" class="smallBtn hvr-grow">Jugar con papá</button>
+                    <button onclick="this.juego = document.getElementById('imagen_game');enviarInvitacion(juego);" class="smallBtn hvr-grow">Jugar con papá</button>
+                    <!-- <button onclick="document.getElementById('lightSolicitud').style.display='block';document.getElementById('fadeSolicitud').style.display='block';" class="smallBtn hvr-grow">Jugar con papá</button> -->
                     <!-- <button class="smallBtn hvr-grow">Preguntar a papá</button> -->
                 </div>
                 <div id="videollamada">
@@ -186,12 +189,24 @@
                 </a>
             </div>
             <div id="popupDiv2">
-                <div id="light2" class="white_content"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade2').style.display='none'" class="close">X</a><p id="Turno_Set"></p></div>
+                <div id="light2" class="white_content"><a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade2').style.display='none'" class="close">x</a><p id="Turno_Set"></p></div>
                 <a href = "javascript:void(0)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade2').style.display='none';" style="cursor:default;">
                 <div id="fade2" class="black_overlay"></div>
                 </a>
             </div>
-
+            <div id="popupDivSolicitud">
+                <div id="lightSolicitud" class="white_content"><a href = "javascript:void(0)" onclick = "aceptarCancelarInvitacion('no');document.getElementById('lightSolicitud').style.display='none';document.getElementById('fadeSolicitud').style.display='none'" class="close">x</a><p id="Turno_Set">Ha recibido una invitación a jugar por turnos</p>
+                    <button id="aceptInvitacion" class="center hvr-grow" onclick="aceptarCancelarInvitacion('si');document.getElementById('lightSolicitud').style.display='none';document.getElementById('fadeSolicitud').style.display='none'">
+                        Aceptar
+                    </button>
+                    <button id="cancelInvitacion" class="center hvr-grow" onclick="aceptarCancelarInvitacion('no');document.getElementById('lightSolicitud').style.display='none';document.getElementById('fadeSolicitud').style.display='none'">
+                        Continuar con mi juego
+                    </button>
+                </div>
+                <a href = "javascript:void(0)" onclick = "document.getElementById('lightSolicitud').style.display='none';document.getElementById('fadeSolicitud').style.display='none';" style="cursor:default;">
+                <div id="fadeSolicitud" class="black_overlay"></div>
+                </a>
+            </div>
         </div>
     </div>
 

@@ -34,6 +34,24 @@ function notifyMe(input) {
 
 }
 
+function notifyMeTurno(input) {
+  if (!Notification) {
+    alert('Desktop notifications not available in your browser. Try Chromium.'); 
+    return;
+  }
+
+  if (Notification.permission !== "granted")
+    Notification.requestPermission();
+  else {
+    var notification = new Notification('¡Cambio!', {
+      icon: 'https://freeiconshop.com/files/edd/notification-flat.png',
+      body: 'Turno de ' + input + '.'
+    });
+    
+  }
+
+}
+
 
 
 
@@ -44,6 +62,10 @@ var respuestasDefault = new Array();
 var respuestasErroneas = new Array();
 var turno=0;
 var control=0;
+
+var juego;
+var juegoRecibido = null;
+var socket = io();
 //var newArr = JSON.parse(jsonData);
 
 function onLoadEvent() {
@@ -53,17 +75,41 @@ function onLoadEvent() {
     escogerTema(0);
 }
 
+function enviarInvitacion(juego) {
+    var nombreJuego = juego.alt;
+
+    socket.emit('solicitud juego', nombreJuego);
+}
+
+socket.on('solicitud juego', function(msg){
+    juegoRecibido = msg;
+    document.getElementById('lightSolicitud').style.display='block';
+    document.getElementById('fadeSolicitud').style.display='block';
+    $('#messages').append($('<li>').text(msg));
+});
+
+function aceptarCancelarInvitacion(resp) {
+    socket.emit('aceptarCancelar juego', resp);
+    if (resp === 'si') {
+        setTurno();
+    }
+    else{
+
+    }
+}
 function setTurno(){
     turno=((Math.random()*10)%1 + 1).toFixed(0);
     control=1;
     if(turno==1){
         document.getElementById('Turno_Set').innerHTML="Turno de Hijo";
+        notifyMeTurno('Hijo');
         control=1;
 
     }
     if(turno==2){
         document.getElementById('Turno_Set').innerHTML="Turno de Padre"; 
-        control2=1;
+        notifyMeTurno('Padre');
+        control=1;
     }
     
 }
@@ -238,6 +284,7 @@ function validateInput(){
             if(control==1){
                 if(turno==1){    
                     document.getElementById('Turno_Set').innerHTML="Turno de Padre";
+                    socket.emit('palabra falla', inputString);
                     turno=2;
                 }else if(turno==2){
                     document.getElementById('Turno_Set').innerHTML="Turno de Hijo";
